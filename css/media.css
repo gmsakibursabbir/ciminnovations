@@ -1,0 +1,38 @@
+.container-custom {
+  width: 100%;
+  max-width: 1512px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* ========== Tablet: 1024px ========== */
+@media (max-width: 1024px) {
+  .container-custom {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* ========== Fold: 953px ========== */
+@media (max-width: 953px) {
+
+}
+
+/* ========== Mobile: 670px and below ========== */
+@media (max-width: 670px) {
+  .container-custom {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* ========== Specific Mobile Devices (optional) ========== */
+@media (max-width: 430px) {
+ 
+}
+
+@media (max-width: 393px) {
+
+}

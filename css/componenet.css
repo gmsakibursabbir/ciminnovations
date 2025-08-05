@@ -1,0 +1,100 @@
+/* === landing page start === */
+
+.cbtn-login {
+  display: inline-flex;
+  height: 44px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1.3px solid #d5f8cf;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #d5f8cf;
+  text-align: center;
+}
+.cbtn-signup {
+  display: inline-flex;
+  width: 134px;
+  height: 44px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 24px 32px -16px rgba(81, 7, 141, 0.25),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+  font-size: 16px;
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.hero-button-one {
+  display: inline-flex;
+  min-width: 295px;
+  max-height: 59px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 -15px 47.6px 0 rgba(255, 7, 136, 0.5),
+    0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 15px 40px -16px rgba(237, 30, 187, 0.5),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+}
+.hero-button-one:hover {
+  background: var(--color-white);
+  color: var(--color-text);
+}
+.cbtn-hero-icon {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+.hero-button-one:hover .cbtn-hero-icon {
+  fill: var(--color-text);
+  transform: translateX(6px);
+}
+
+.hero-button-two {
+  display: inline-flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 2px solid var(--color-pink);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.hero-button-two:hover {
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 -15px 47.6px 0 rgba(255, 7, 136, 0.5),
+    0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 15px 40px -16px rgba(237, 30, 187, 0.5),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+  color: var(--color-white);
+}
+/* === landing page end === */
