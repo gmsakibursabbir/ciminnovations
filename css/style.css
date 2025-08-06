@@ -248,6 +248,7 @@ ul li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
