@@ -10,7 +10,7 @@ const images = [
   {
     url: `${basePath}/assets/img/hero-slider-02.png`,
     heading: "Create Wholesome <span>content</span>",
-    subtext: "Your voice has the power to make an impact",
+    subtext: "Every word, image, and idea - created in a space that feels  like home",
   },
   {
     url: `${basePath}/assets/img/hero-slider-03.png`,
