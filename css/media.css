@@ -219,6 +219,14 @@
     padding: 16px;
     gap: 24px;
   }
+  .fm-hero-overlay .fm-top-left {
+    left: 16px;
+    top: 24px;
+  }
+  .fm-hero-overlay .fm-top-right {
+    right: 16px;
+    top: 24px;
+  }
   .fm-top-left {
     left: 16px;
     top: 16px;
