@@ -50,6 +50,7 @@ ul li {
   position: sticky;
   top: 70px;
   z-index: 999;
+  transition: top 0.3s ease;
 }
 .hamberger button {
   background-color: transparent;

@@ -130,3 +130,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header-landing");
+  const currentScroll =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  // Detect screen width
+  const screenWidth = window.innerWidth;
+
+  // Define responsive top values
+  let topDown = 26;
+  let topUp = 70;
+
+  if (screenWidth <= 768) {
+    // Mobile / Tablet adjustments
+    topDown = 10;
+    topUp = 31;
+  } else if (screenWidth <= 1024) {
+    // Medium screen adjustments
+    topDown = 20;
+    topUp = 70;
+  }
+
+  if (currentScroll > lastScrollTop && currentScroll > 50) {
+    // Scrolling down
+    header.style.top = `${topDown}px`;
+  } else {
+    // Scrolling up or at top
+    header.style.top = `${topUp}px`;
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
