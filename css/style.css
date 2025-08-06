@@ -48,8 +48,12 @@ ul li {
 /* landing - header start */
 .header-landing {
   position: sticky;
-  top: 72px;
+  top: 70px;
   z-index: 999;
+}
+.hamberger button {
+  background-color: transparent;
+  border: none;
 }
 .hero-nav {
   background-color: var(--color-accent);
@@ -73,6 +77,10 @@ ul li {
   font-weight: 600;
   font-size: 16px;
   color: var(--color-greiny);
+  transition: all 0.3s ease;
+}
+.menu-link li a:hover {
+  color: var(--color-pink);
 }
 /* landing - header end */
 /* landing - hero start */
@@ -86,7 +94,7 @@ ul li {
   position: relative;
   box-sizing: border-box;
   transition: background-image 1s ease-in-out;
-  margin-top: -86px;
+  margin-top: -87px;
 }
 #hero-heading,
 #hero-subtext {
@@ -426,7 +434,7 @@ ul li {
 .audience-texts {
   color: #101d1c;
   font-family: var(--font-jakarta);
-  font-size: var(--Size-6, 20px);
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -496,7 +504,7 @@ ul li {
 }
 
 .splide__slide {
-  padding: 1rem; /* Padding for individual slides to create gap */
+  padding: 10px; /* Padding for individual slides to create gap */
 }
 .splide__slide {
   width: 100%;
@@ -642,7 +650,7 @@ ul li {
   /* Background blur/Foreground primary */
   backdrop-filter: blur(75px);
 }
-.cpb-172x{
+.cpb-172x {
   padding: 172px;
 }
 .custom-accordion .accordion-button {
@@ -681,7 +689,7 @@ ul li {
 .footer-rows {
   gap: 100px;
 }
-.cpy-100x{
+.cpy-100x {
   padding: 100px 0;
 }
 .footer-content h2 {
@@ -765,7 +773,7 @@ ul li {
   letter-spacing: 0.24px;
   transition: all 0.3s ease;
 }
-.social-icons a:hover{
+.social-icons a:hover {
   transform: scale(1.05);
 }
 .fm-middle-ftt {
@@ -778,7 +786,8 @@ ul li {
   z-index: 9;
 }
 .footer-copyright {
-  padding: 40px 24px;
+  padding: 40px 0;
+  margin: 0 24px;
   border-top: 1px solid #535353;
   display: flex;
   justify-content: center;
@@ -792,6 +801,172 @@ ul li {
   line-height: 27.2px;
   text-align: center;
 }
+.dashed-border {
+  margin: 0 24px;
+  height: 5px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    white 0,
+    white 1px,
+    /* The line width remains 2px */ transparent 2px,
+    transparent 8px /* The transparent gap is now 6px wide (8px - 2px) */
+  );
+}
 /* landing-footer end */
 
 /* === Footer === */
+/* === modal start === */
+.modal-content {
+  border-radius: var(--Corner-radius-lg, 12px);
+  background: #f8f7f1;
+  padding: 32px;
+  max-width: 612px;
+}
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  position: relative;
+  text-align: center;
+}
+.modal-title {
+  color: #0f172a;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 150%;
+  width: 100%;
+}
+.modal-body {
+  padding: 0px !important;
+}
+.modal-body p {
+  color: #78716c;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+.modal-forms {
+  padding: 64px 0 96px;
+}
+.form-label {
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 145%;
+  opacity: 0.6;
+}
+.form-control {
+  padding: 14px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(28, 25, 23, 0.14);
+  background: rgba(255, 255, 255, 0.85);
+}
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn-primary {
+  display: flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #fa64b2;
+  width: 100%;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #e0326e; /* Darker pink on hover */
+  border-color: #e0326e;
+}
+.btn-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: none;
+  border: none;
+  opacity: 0.7;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-close:hover {
+  opacity: 1;
+  outline: none;
+}
+
+/* Styles for the show password feature */
+.password-input-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #78716c; /* Match the paragraph text color */
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Space between text and icon */
+  padding: 0; /* Remove default button padding */
+  line-height: 1; /* Align text and icon vertically */
+}
+.password-toggle .eye-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  color: #a3a3a3; /* Color for the eye icon */
+}
+
+/* Styles for the Verify Account Modal specific elements */
+.verify-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px; /* Space between buttons */
+  margin-top: 56px; /* Space above buttons */
+}
+.verify-modal-buttons .btn {
+  flex: 1; /* Make buttons take equal width */
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.verify-modal-buttons .btn-outline-secondary {
+  color: #0f172a;
+  background-color: transparent;
+  border: none;
+}
+.verify-modal-buttons .btn-outline-secondary:hover {
+  background-color: rgba(28, 25, 23, 0.05);
+  color: #0f172a;
+}
+.verify-modal-buttons .btn-primary {
+  border-radius: var(--Corner-radius-md, 8px);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    #fa64b2;
+  color: #fa64b2;
+  border: none;
+}
+.verify-modal-buttons .btn-primary:hover {
+  background: #e0326e;
+  color: #ffffff;
+  border: none;
+}
+/* === modal end === */

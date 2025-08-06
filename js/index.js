@@ -47,8 +47,8 @@ setInterval(updateHero, 5000);
 
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#pricing-slider", {
-    type: "loop", // <-- This enables infinite looping
-    perPage: 3.6,
+    autoplay: true,
+    perPage: 3.3,
     fixedWidth: 360,
     arrows: false,
     pagination: false,
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       992: {
         perPage: 2,
-        fixedWidth: null, // Remove fixedWidth on smaller devices for flexibility
+        fixedWidth: null,
       },
       768: {
         perPage: 1,
@@ -64,4 +64,48 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   }).mount();
+});
+
+//form
+document.addEventListener("DOMContentLoaded", function () {
+  // Password toggle functionality for signup modal
+  const togglePassword = document.getElementById("togglePassword");
+  const togglePasswordText = document.getElementById("togglePasswordText");
+  const passwordInput = document.getElementById("signupPasswordInput");
+
+  if (togglePassword && passwordInput && togglePasswordText) {
+    togglePassword.addEventListener("click", function () {
+      const type =
+        passwordInput.getAttribute("type") === "password" ? "text" : "password";
+      passwordInput.setAttribute("type", type);
+      togglePasswordText.textContent = type === "password" ? "Show" : "Hide";
+    });
+  }
+
+  // Handle signup form submission to show verify account modal
+  const signupForm = document.getElementById("signupForm");
+  if (signupForm) {
+    signupForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Get the signup modal instance
+      const signupModalElement = document.getElementById("signupModal");
+      const signupModal = bootstrap.Modal.getInstance(signupModalElement);
+
+      // Get the verify account modal instance
+      const verifyAccountModalElement =
+        document.getElementById("verifyAccountModal");
+      const verifyAccountModal = new bootstrap.Modal(verifyAccountModalElement);
+
+      // Hide the signup modal
+      if (signupModal) {
+        signupModal.hide();
+      }
+
+      // Show the verify account modal after a short delay to allow signup modal to close
+      setTimeout(() => {
+        verifyAccountModal.show();
+      }, 300); // Adjust delay as needed
+    });
+  }
 });

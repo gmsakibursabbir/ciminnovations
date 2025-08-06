@@ -47,7 +47,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <!-- css main -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/utility.css" />
     <link rel="stylesheet" href="./css/componenet.css" />
   </head>
   <body>
@@ -73,8 +72,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
           <!-- buttons -->
           <div class="menu-btns align-items-center gap-3">
-            <a href="./contact.html" class="cbtn-login">Login</a>
-            <a href="./contact.html" class="cbtn-signup">Sign Up</a>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              class="cbtn-login"
+              >Login</a
+            >
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              class="cbtn-signup"
+              >Sign Up</a
+            >
           </div>
           <!-- hamberger -->
           <div class="hamberger">
@@ -183,7 +192,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="container-custom custom-space">
           <div class="row">
             <div class="col">
-              <div class="myspace-content">
+              <div class="myspace-content px-32-16">
                 <h2>Why you should be on Mystreamspace</h2>
                 <p>
                   Mystreamspace is the easiest way to broadcast live to your
@@ -245,7 +254,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             class="fm-middle-bottom"
           />
         </div>
-        <div class="container-custom">
+        <div class="container-custom px-32-16">
           <div class="row flex-column flex-md-row streamspace-gap">
             <div class="col"></div>
             <div class="col">
@@ -316,7 +325,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <!-- audience start -->
       <section
         id="landing-audience"
-        class="d-flex align-items-end position-relative overflow-hidden cpy-120"
+        class="d-flex align-items-end position-relative overflow-hidden"
       >
         <div class="fm-overlay">
           <img
@@ -791,6 +800,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             class="fm-top-right"
           />
           <img
+            src="./assets/svg/bottom-left-frame.svg"
+            alt=""
+            class="fm-bottom-left"
+          />
+          <img
             src="./assets/svg/pink-lines-v.svg"
             alt=""
             class="fm-middle-top"
@@ -917,11 +931,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <!-- main end -->
     <!-- footer start -->
     <footer id="landing-footer" class="position-relative overflow-hidden">
-      <div class="fm-overlay">
-        <img src="./assets/svg/footer-line.svg" alt="" class="fm-middle-top" />
-      </div>
+      <div class="dashed-border"></div>
       <div>
-        <div class="container-custom cpy-100x">
+        <div class="container-custom cpy-100x custom-spacee">
           <div class="row footer-rows">
             <div class="col">
               <div class="footer-content">
@@ -975,7 +987,235 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </footer>
     <!-- footer end -->
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+              >
+                <path
+                  d="M17.8543 17.8538L1.3335 1.33301ZM17.8543 1.33301L1.3335 17.8538Z"
+                  fill="#A3A3A3"
+                />
+                <path
+                  d="M17.8543 17.8538L1.3335 1.33301M17.8543 1.33301L1.3335 17.8538"
+                  stroke="#A3A3A3"
+                  stroke-width="2.17857"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Create an account to continue your journey of purpose,
+              partnership, and global impact.
+            </p>
+            <form>
+              <div class="modal-forms">
+                <div class="mb-3">
+                  <label for="loginEmailInput" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="loginEmailInput"
+                    placeholder="user@example.com"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Log in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Signup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Join Streamspace</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+              >
+                <path
+                  d="M17.8543 17.8538L1.3335 1.33301ZM17.8543 1.33301L1.3335 17.8538Z"
+                  fill="#A3A3A3"
+                />
+                <path
+                  d="M17.8543 17.8538L1.3335 1.33301M17.8543 1.33301L1.3335 17.8538"
+                  stroke="#A3A3A3"
+                  stroke-width="2.17857"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Create an account to continue your journey of purpose,
+              partnership, and global impact.
+            </p>
+            <form id="signupForm">
+              <div class="modal-forms">
+                <div class="mb-3">
+                  <label for="signupEmailInput" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="signupEmailInput"
+                    placeholder="user@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="signupPasswordInput" class="form-label"
+                    >Password</label
+                  >
+                  <div class="password-input-container">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="signupPasswordInput"
+                      placeholder="Enter your password"
+                    />
+                    <button
+                      type="button"
+                      class="password-toggle"
+                      id="togglePassword"
+                    >
+                      <span id="togglePasswordText">Show</span>
+                      <svg
+                        class="eye-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                        />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Create streamspace account
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Verify Account Modal -->
+    <div
+      class="modal fade"
+      id="verifyAccountModal"
+      tabindex="-1"
+      aria-labelledby="verifyAccountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="verifyAccountModalLabel">
+              Verify Account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+              >
+                <path
+                  d="M17.8543 17.8538L1.3335 1.33301ZM17.8543 1.33301L1.3335 17.8538Z"
+                  fill="#A3A3A3"
+                />
+                <path
+                  d="M17.8543 17.8538L1.3335 1.33301M17.8543 1.33301L1.3335 17.8538"
+                  stroke="#A3A3A3"
+                  stroke-width="2.17857"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              A verification email has been sent to the email you provided.
+              Click the link within the email to access your account.
+            </p>
+            <div class="verify-modal-buttons">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-dismiss="modal"
+              >
+                Dismiss
+              </button>
+              <button type="button" class="btn btn-primary">
+                Resend email
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- js -->
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js

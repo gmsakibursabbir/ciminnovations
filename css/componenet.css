@@ -14,8 +14,10 @@
   line-height: 140%;
   color: #d5f8cf;
   text-align: center;
+  cursor: pointer;
 }
 .cbtn-signup {
+    cursor: pointer;
   display: inline-flex;
   width: 134px;
   height: 44px;
