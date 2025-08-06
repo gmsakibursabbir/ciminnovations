@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+/// header
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
@@ -138,19 +139,15 @@ window.addEventListener("scroll", function () {
   const currentScroll =
     window.pageYOffset || document.documentElement.scrollTop;
 
-  // Detect screen width
+  // Responsive values
   const screenWidth = window.innerWidth;
-
-  // Define responsive top values
   let topDown = 26;
   let topUp = 70;
 
   if (screenWidth <= 768) {
-    // Mobile / Tablet adjustments
     topDown = 10;
     topUp = 31;
   } else if (screenWidth <= 1024) {
-    // Medium screen adjustments
     topDown = 20;
     topUp = 70;
   }
@@ -158,9 +155,15 @@ window.addEventListener("scroll", function () {
   if (currentScroll > lastScrollTop && currentScroll > 50) {
     // Scrolling down
     header.style.top = `${topDown}px`;
-  } else {
-    // Scrolling up or at top
-    header.style.top = `${topUp}px`;
+  } else if (currentScroll < lastScrollTop) {
+    // Scrolling up
+    if (currentScroll <= 30) {
+      // Back near top of page
+      header.style.top = `${topUp}px`;
+    } else {
+      // Still scrolling up, but not back to top — keep it low
+      header.style.top = `${topDown}px`;
+    }
   }
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
