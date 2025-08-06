@@ -32,10 +32,17 @@
     />
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <!-- css CDN -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
     />
     <!-- css main -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -52,7 +59,7 @@
             ><img src="./assets/img/streamspace-logo-white.png" alt=""
           /></a>
           <!-- menu -->
-          <div>
+          <div class="menu">
             <ul
               class="d-flex align-items-center justify-content-between menu-link"
             >
@@ -65,9 +72,15 @@
             </ul>
           </div>
           <!-- buttons -->
-          <div class="d-flex align-items-center gap-3">
+          <div class="menu-btns align-items-center gap-3">
             <a href="./contact.html" class="cbtn-login">Login</a>
             <a href="./contact.html" class="cbtn-signup">Sign Up</a>
+          </div>
+          <!-- hamberger -->
+          <div class="hamberger">
+            <button>
+              <img src="./assets/img/Hamburger Menu.png" alt="" />
+            </button>
           </div>
         </nav>
       </div>
@@ -81,15 +94,23 @@
         class="d-flex align-items-end cpb-90 position-relative overflow-hidden"
       >
         <div class="fm-overlay">
-          <img src="./assets/svg/left-frame.svg" alt="" class="fm-top-left" />
-          <img src="./assets/svg/left-frame.svg" alt="" class="fm-top-right" />
           <img
-            src="./assets/svg/left-frame.svg"
+            src="./assets/svg/top-left-frame.svg"
+            alt=""
+            class="fm-top-left"
+          />
+          <img
+            src="./assets/svg/top-right-frame.svg"
+            alt=""
+            class="fm-top-right"
+          />
+          <img
+            src="./assets/svg/bottom-left-frame.svg"
             alt=""
             class="fm-bottom-left"
           />
           <img
-            src="./assets/svg/left-frame.svg"
+            src="./assets/svg/bottom-right-frame.svg"
             alt=""
             class="fm-bottom-right"
           />
@@ -100,7 +121,7 @@
           />
         </div>
         <div class="container-custom">
-          <div class="row">
+          <div class="row hero-rwos">
             <div class="col">
               <div class="hero-content">
                 <h1 id="hero-heading">Share, connect, <span>grow</span></h1>
@@ -138,54 +159,63 @@
       <!-- myspace start -->
       <section
         id="landing-myspace"
-        class="d-flex align-items-end cpb-90 position-relative overflow-hidden cpy-130"
+        class="d-flex align-items-end position-relative overflow-hidden"
       >
         <div class="fm-overlay">
           <img
-            src="./assets/svg/left-frame-black.svg"
+            src="./assets/svg/top-left-frame-black.svg"
             alt=""
-            class="fm-top-left"
+            class="fm-top-left cdp-t-130"
           />
 
           <img
-            src="./assets/svg/left-frame-black.svg"
+            src="./assets/svg/bottom-right-frame-black.svg"
             alt=""
-            class="fm-bottom-left"
+            class="fm-bottom-right cdp-b-130"
           />
-          <img src="./assets/img/benifit-frames.png" alt="" class="benefit-frame">
+          <img
+            src="./assets/img/benifit-frames.png"
+            alt=""
+            class="benefit-frame"
+          />
+          <img src="./assets/svg/pink-line.svg" alt="" class="fm-middle-left" />
         </div>
-        <div class="container-custom ">
+        <div class="container-custom custom-space">
           <div class="row">
             <div class="col">
               <div class="myspace-content">
                 <h2>Why you should be on Mystreamspace</h2>
-                <p>Mystreamspace is the easiest way to broadcast live to your community — whether you're hosting an event, teaching a class, leading a discussion, or building something bigger</p>
+                <p>
+                  Mystreamspace is the easiest way to broadcast live to your
+                  community — whether you're hosting an event, teaching a class,
+                  leading a discussion, or building something bigger
+                </p>
                 <div class="myspace-list">
                   <!-- 1 -->
-                   <div class="myspace-box">
-                    <img src="./assets/img/mss-01.png" alt="">
+                  <div class="myspace-box">
+                    <img src="./assets/img/mss-01.png" alt="" />
                     <h5>Seamless Sharing</h5>
-                   </div>
+                  </div>
                   <!-- 2 -->
-                   <div class="myspace-box">
-                    <img src="./assets/img/mss-02.png" alt="">
+                  <div class="myspace-box">
+                    <img src="./assets/img/mss-02.png" alt="" />
                     <h5>Real-Time Analytics</h5>
-                   </div>
+                  </div>
                   <!-- 3 -->
-                   <div class="myspace-box">
-                    <img src="./assets/img/mss-03.png" alt="">
+                  <div class="myspace-box">
+                    <img src="./assets/img/mss-03.png" alt="" />
                     <h5>Boost your channels</h5>
-                   </div>
+                  </div>
                   <!-- 4 -->
-                   <div class="myspace-box">
-                    <img src="./assets/img/mss-04.png" alt="">
+                  <div class="myspace-box">
+                    <img src="./assets/img/mss-04.png" alt="" />
                     <h5>Community-centered</h5>
-                   </div>
+                  </div>
                   <!-- 5 -->
-                   <div class="myspace-box">
-                    <img src="./assets/img/mss-05.png" alt="">
+                  <div class="myspace-box">
+                    <img src="./assets/img/mss-05.png" alt="" />
                     <h5>On-demand Replays</h5>
-                   </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,10 +223,763 @@
         </div>
       </section>
       <!-- myspace end -->
+      <!-- streamspace start -->
+      <section
+        id="landing-streamspace"
+        class="d-flex align-items-end position-relative overflow-hidden"
+      >
+        <div class="fm-overlay">
+          <img
+            src="./assets/svg/top-right-frame.svg"
+            alt=""
+            class="fm-top-right"
+          />
+          <img
+            src="./assets/svg/pink-lines-v.svg"
+            alt=""
+            class="fm-middle-top"
+          />
+          <img
+            src="./assets/svg/pink-lines-v.svg"
+            alt=""
+            class="fm-middle-bottom"
+          />
+        </div>
+        <div class="container-custom">
+          <div class="row flex-column flex-md-row streamspace-gap">
+            <div class="col"></div>
+            <div class="col">
+              <div class="streamspace-content">
+                <h2>How to Get Started</h2>
+                <div class="streamspace-list">
+                  <!-- 1 -->
+                  <div class="streamspace-box">
+                    <div class="streamspace-icon"></div>
+                    <div class="streamspace-text">
+                      <h4>Create Your Room</h4>
+                      <p>
+                        Log in, click ‘<span>New Stream,</span>’ name your event
+                        and set a schedule.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="streamspace-box">
+                    <div class="streamspace-icon"></div>
+                    <div class="streamspace-text">
+                      <h4>Go Live</h4>
+                      <p>
+                        Hit ‘<span>Start Broadcast</span>’, Streamspace handles
+                        audio/video, captions, and chat.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="streamspace-box">
+                    <div class="streamspace-icon"></div>
+                    <div class="streamspace-text">
+                      <h4>Boost & Grow 🚀</h4>
+                      <p>
+                        Share your unique link, watch attendance, and hearts,
+                        grow in real time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="streamspace-btn d-flex gap-32">
+                  <a href="#" class="cbtn hero-button-one"
+                    >Join Streamspace
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="15"
+                        viewBox="0 0 18 15"
+                        fill="none"
+                        class="cbtn-hero-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.4697 0.96967C10.7626 0.676777 11.2374 0.676777 11.5303 0.96967L17.5303 6.96967C17.8232 7.26256 17.8232 7.73744 17.5303 8.03033L11.5303 14.0303C11.2374 14.3232 10.7626 14.3232 10.4697 14.0303C10.1768 13.7374 10.1768 13.2626 10.4697 12.9697L15.1893 8.25H1C0.585786 8.25 0.25 7.91421 0.25 7.5C0.25 7.08579 0.585786 6.75 1 6.75H15.1893L10.4697 2.03033C10.1768 1.73744 10.1768 1.26256 10.4697 0.96967Z"
+                          fill="inherit"
+                        /></svg
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- streamspace end -->
+      <!-- audience start -->
+      <section
+        id="landing-audience"
+        class="d-flex align-items-end position-relative overflow-hidden cpy-120"
+      >
+        <div class="fm-overlay">
+          <img
+            src="./assets/svg/top-right-frame-black.svg"
+            alt=""
+            class="fm-top-right cdp-t-60"
+          />
+
+          <img
+            src="./assets/svg/bottom-left-frame-black.svg"
+            alt=""
+            class="fm-bottom-left cdp-b-60"
+          />
+
+          <img
+            src="./assets/svg/pink-lines-v.svg"
+            alt=""
+            class="fm-middle-top"
+          />
+          <img
+            src="./assets/svg/pink-lines-v.svg"
+            alt=""
+            class="fm-middle-bottom"
+          />
+        </div>
+        <div class="container-custom">
+          <div class="row">
+            <div class="col">
+              <div class="audience-content">
+                <h2>Audience‑Specific Use Cases</h2>
+                <p>Worem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="audience-list">
+                  <!-- 1 -->
+                  <div class="audience-box aud-item-1">
+                    <div class="audience-img">
+                      <img
+                        src="./assets/img/audiance-01.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Live Stream</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="audience-box aud-item-2">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Small‑Group Hosts & Prayer Coordinators</h4>
+                      <p>
+                        Create recurring prayer rooms for midweek check‑ins or
+                        themed devotionals.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="audience-box aud-item-3">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Outreach & Mission Teams</h4>
+                      <p>
+                        Connect real‑time with remote or overseas mission
+                        fields. Share live updates, testimonies, and prayer
+                        requests back home.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="audience-box aud-item-4">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Youth & Campus Ministry Leaders</h4>
+                      <p>
+                        Engage students with interactive livestream Bible
+                        studies, Q&A sessions, and virtual hangouts.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5 lg -->
+                  <div class="audience-boxs aud-item-5 d-md-none d-lg-flex">
+                    <div class="audience-imgs">
+                      <img
+                        src="./assets/img/audiance-02.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div
+                      class="audience-texts d-flex flex-column justify-content-center"
+                    >
+                      <h4>Worship Teams & Creative Arts Directors</h4>
+                      <p>
+                        Broadcast live worship sessions, band rehearsals, choir
+                        performances, or musical devotionals directly to your
+                        congregation, with high‑quality audio/video and a
+                        prayer.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5 md -->
+                  <div class="audience-box aud-item-5 d-md-flex d-lg-none">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Worship Teams & Creative Arts Directors</h4>
+                      <p>
+                        Broadcast live worship sessions, band rehearsals, choir
+                        performances, or musical devotionals directly to your
+                        congregation, with high‑quality audio/video and a
+                        prayer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex d-md-none flex-column gap-3">
+                  <!-- 1 -->
+                  <div class="audience-box aud-item-1">
+                    <div class="audience-img">
+                      <img
+                        src="./assets/img/audiance-01.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Live Stream</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="audience-box aud-item-2">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Small‑Group Hosts & Prayer Coordinators</h4>
+                      <p>
+                        Create recurring prayer rooms for midweek check‑ins or
+                        themed devotionals.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="audience-box aud-item-3">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Outreach & Mission Teams</h4>
+                      <p>
+                        Connect real‑time with remote or overseas mission
+                        fields. Share live updates, testimonies, and prayer
+                        requests back home.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="audience-box aud-item-4">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Youth & Campus Ministry Leaders</h4>
+                      <p>
+                        Engage students with interactive livestream Bible
+                        studies, Q&A sessions, and virtual hangouts.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 5 md -->
+                  <div class="audience-box aud-item-5 d-md-flex d-lg-none">
+                    <div class="audience-img">
+                      <img src="./assets/img/audiance-01.png" alt="" />
+                    </div>
+                    <div class="audience-text">
+                      <h4>Worship Teams & Creative Arts Directors</h4>
+                      <p>
+                        Broadcast live worship sessions, band rehearsals, choir
+                        performances, or musical devotionals directly to your
+                        congregation, with high‑quality audio/video and a
+                        prayer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- audience end -->
+      <!-- pricing start -->
+      <section
+        id="landing-pricing"
+        class="d-flex flex-column align-items-end position-relative overflow-hidden"
+      >
+        <div class="fm-overlay">
+          <img
+            src="./assets/svg/top-left-frame-black.svg"
+            alt=""
+            class="fm-top-left cdp-t-60"
+          />
+
+          <img
+            src="./assets/svg/bottom-right-frame-black.svg"
+            alt=""
+            class="fm-bottom-right cdp-b-60"
+          />
+        </div>
+        <div class="container-custom">
+          <div class="row">
+            <div class="col">
+              <div class="audience-content">
+                <h2>Pricing</h2>
+                <p>Pick the best plan for your needs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="position-relative w-100 price-sld">
+          <!-- Slider wrapper with only left spacing, no right spacing -->
+          <div class="slider-overflow-wrapper">
+            <div class="splide" id="pricing-slider">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <!-- FREE Plan -->
+                  <li class="splide__slide">
+                    <div class="pricing-box">
+                      <!-- 1 -->
+                      <div class="pricing-one">
+                        <span>Free</span>
+                        <h3>0 Espees</h3>
+                        <p>
+                          Worem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <div class="w-100">
+                        <a
+                          href=""
+                          onclick="return false;"
+                          class="pricing-current"
+                          >Current plan</a
+                        >
+                      </div>
+                      <!-- 3 -->
+                      <div class="pricing-three">
+                        <h4>Features</h4>
+                        <ul>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Up to 10 viewers</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>30-minute sessions</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Easy virtual space</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Dynamic chat and reactions</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Manage participants</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Audio conference</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Starter Plan -->
+                  <li class="splide__slide">
+                    <div class="pricing-box">
+                      <!-- 1 -->
+                      <div class="pricing-one">
+                        <span>Starter</span>
+                        <h3>2 Espees <sub>/month</sub></h3>
+                        <p>
+                          Worem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <div class="w-100">
+                        <a href="" onclick="return false;" class="pricing-pink"
+                          >Get Starter</a
+                        >
+                      </div>
+                      <!-- 3 -->
+                      <div class="pricing-three">
+                        <h4>Features</h4>
+                        <ul>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Up to 20 viewers</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>50-minute sessions</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Easy virtual space</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Dynamic chat and reactions</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Manage participants</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Audio conference</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Screen sharing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Standard Plan -->
+                  <li class="splide__slide">
+                    <div class="pricing-box">
+                      <!-- 1 -->
+                      <div class="pricing-one">
+                        <span>Starter</span>
+                        <h3>5 Espees <sub>/month</sub></h3>
+                        <p>
+                          Worem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <div class="w-100">
+                        <a href="" onclick="return false;" class="pricing-pink"
+                          >Get Standard</a
+                        >
+                      </div>
+                      <!-- 3 -->
+                      <div class="pricing-three">
+                        <h4>Features</h4>
+                        <ul>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Up to 30 viewers</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>60-minute sessions Max</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Easy virtual space</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Dynamic chat and reactions</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Manage participants</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Audio conference</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Screen sharing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Standard Plus Plan -->
+                  <li class="splide__slide">
+                    <div class="pricing-box">
+                      <!-- 1 -->
+                      <div class="pricing-one">
+                        <span>Standard Plus</span>
+                        <h3>10 Espees <sub>/month</sub></h3>
+                        <p>
+                          Worem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <div class="w-100">
+                        <a href="" onclick="return false;" class="pricing-pink"
+                          >Standard Plus</a
+                        >
+                      </div>
+                      <!-- 3 -->
+                      <div class="pricing-three">
+                        <h4>Features</h4>
+                        <ul>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Up to 50 viewers</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>60-minute sessions Max</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Easy virtual space</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Dynamic chat and reactions</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Manage participants</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Audio conference</span>
+                          </li>
+                          <li>
+                            <img src="./assets/svg/check.svg" alt="" />
+                            <span>Screen sharing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- pricing end -->
+      <!-- faq start -->
+      <section
+        id="landing-faq"
+        class="d-flex align-items-end position-relative overflow-hidden"
+      >
+        <div class="fm-overlay">
+          <img
+            src="./assets/svg/top-right-frame.svg"
+            alt=""
+            class="fm-top-right"
+          />
+          <img
+            src="./assets/svg/pink-lines-v.svg"
+            alt=""
+            class="fm-middle-top"
+          />
+          <img
+            src="./assets/svg/pink-lines-v.svg"
+            alt=""
+            class="fm-middle-bottom"
+          />
+        </div>
+        <div class="container-custom cpb-172x">
+          <div class="row streamspace-gap flex-column flex-md-row">
+            <div class="col">
+              <div class="streamspace-content">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion custom-accordion" id="faqAccordion">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                      aria-expanded="true"
+                    >
+                      What are the active campaigns about?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Our campaigns focus on distributing Rhapsody of Realities
+                      to different groups, including households, visually and
+                      hearing-impaired individuals, and youth communities.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                    >
+                      How can I support these campaigns?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      You can support by donating, volunteering, or spreading
+                      the word through your network.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                    >
+                      Can I request a Rhapsody in my language?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes! Rhapsody of Realities is available in many languages.
+                      You can submit a request.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                    >
+                      Can I partner with you for distribution?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Absolutely! We welcome partnerships. Contact us to get
+                      started.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- streamspace end -->
     </main>
     <!-- main end -->
+    <!-- footer start -->
+    <footer id="landing-footer" class="position-relative overflow-hidden">
+      <div class="fm-overlay">
+        <img src="./assets/svg/footer-line.svg" alt="" class="fm-middle-top" />
+      </div>
+      <div>
+        <div class="container-custom cpy-100x">
+          <div class="row footer-rows">
+            <div class="col">
+              <div class="footer-content">
+                <img src="./assets/img/footer-logo.png" alt="" />
+                <h2>
+                  Build your online prayer community with
+                  <span>Streamspace</span>
+                </h2>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-12 col-md-6 col-md lg-5">
+                  <ul class="footer-lists">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html">How to Get Started</a></li>
+                    <li><a href="/index.html">Use Cases</a></li>
+                    <li><a href="/index.html">Pricing</a></li>
+                    <li><a href="/index.html">FAQs</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6 col-md lg-7">
+                  <div class="footer-info">
+                    <h4>Contact us</h4>
+                    <div
+                      class="d-flex flex-column justify-content-center justify-content-lg-start gap-2"
+                    >
+                      <a href="tel:+1 891 989-11-91">+1 891 989-11-91</a>
+                      <a href="mailto:hello@mystreamspace.org"
+                        >hello@mystreamspace.org</a
+                      >
+                      <p>
+                        Suite 210, Broadcast House48 Ridgeway AvenueSan Mateo,
+                        CA 94401, United States.
+                      </p>
+                    </div>
+                    <div class="social-icons">
+                      <a href="#">Instagram</a>
+                      <a href="#">Whatsapp</a>
+                      <a href="#">Telegram</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>STREAMSPACE © 2025. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
 
     <!-- js -->
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"

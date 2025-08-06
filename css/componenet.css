@@ -47,6 +47,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  color: #ffffff;
   font-size: 16px;
   border-radius: 8px;
   transition: background 0.3s ease, color 0.3s ease;
@@ -96,5 +97,30 @@
     0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
     0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
   color: var(--color-white);
+}
+.pricing-pink {
+  display: flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.36px;
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 -4px 40px 0 rgba(255, 7, 136, 0.2),
+    0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 4px 40px -16px rgba(237, 30, 187, 0.2),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
 }
 /* === landing page end === */

@@ -12,7 +12,8 @@ const images = [
   {
     url: "../assets/img/hero-slider-03.png",
     heading: "Boost your events and reach more in a <span>click</span>",
-    subtext: "Stream live prayer meetings, devotional services, and small‑group fellowships with zero tech headache.",
+    subtext:
+      "Stream live prayer meetings, devotional services, and small‑group fellowships with zero tech headache.",
   },
 ];
 
@@ -41,3 +42,26 @@ function updateHero() {
 }
 
 setInterval(updateHero, 5000);
+
+//sliders
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#pricing-slider", {
+    type: "loop", // <-- This enables infinite looping
+    perPage: 3.6,
+    fixedWidth: 360,
+    arrows: false,
+    pagination: false,
+    drag: true,
+    breakpoints: {
+      992: {
+        perPage: 2,
+        fixedWidth: null, // Remove fixedWidth on smaller devices for flexibility
+      },
+      768: {
+        perPage: 1,
+        fixedWidth: null,
+      },
+    },
+  }).mount();
+});

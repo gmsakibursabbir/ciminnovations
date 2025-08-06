@@ -12,6 +12,27 @@
 .cbtn {
   cursor: pointer;
 }
-.cpy-130{
-padding: 130px 0;
+.cpy-100{
+padding: 100px 0;
+}
+.cpy-120{
+padding: 120px 0;
+}
+.cpy-150{
+padding: 150px 0;
+}
+.cpb-172{
+padding-bottom: 172px !important;
+}
+.cdp-t-60{
+  top: 60px !important;
+}
+.cdp-b-60{
+  bottom: 60px !important;
+}
+.cdp-t-130{
+  top: 130px !important;
+}
+.cdp-b-130{
+  bottom: 130px !important;
 }
