@@ -55,6 +55,17 @@
   bottom: 130px !important;
 }
 
+/* ========== Tablet:1199px ========== */
+@media (min-width: 1199.98px) {
+  .dashbordWrapper {
+    padding-left: 282px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .testify .testifyInput {
+    max-width: 540px;
+  }
+}
 /* ========== Tablet: 1024px ========== */
 @media (max-width: 1024px) {
   .container-custom {

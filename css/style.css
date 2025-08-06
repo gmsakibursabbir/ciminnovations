@@ -12,6 +12,13 @@
   --color-white: #ffffff;
   --color-light: #fffcef;
   --color-greiny: #d5f8cf;
+
+  --Label-stroke-1: #eee;
+  --BG-fill-default: #f9f9fb;
+  --default: #131313;
+  --BG-fill: #fff;
+  --Gold-Chrome: #8c421d;
+  --Brand-Primary: #de1135;
 }
 
 /* === General Reset === */
@@ -61,6 +68,7 @@ ul li {
 }
 
 .header-landing {
+  background-color: transparent;
   position: sticky;
   top: 70px;
   z-index: 999;
@@ -995,3 +1003,379 @@ ul li {
   border: none;
 }
 /* === modal end === */
+
+/* === dashboard start === */
+.body-admin {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  position: relative;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.p-10px {
+  padding: 10px;
+}
+.leftSideWrapper {
+  /* padding: 24px 20px 24px 13px;
+  width: 282px;
+  border-right: 1px solid #e5e5e5;
+  background: #f9f9fb;
+  min-height: 100vh;
+  overflow-y: auto;
+  left: 0;
+  top: 0; */
+  width: 100%;
+}
+.logoSide {
+  padding: 10px 0;
+}
+
+.leftSideWrapper .listUl {
+  margin-top: 18px;
+}
+.leftSideWrapper .listUl li a {
+  gap: 0.5rem;
+  color: #6d6d6e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+  border: 1px solid transparent;
+}
+.leftSideWrapper .listUl li a.active {
+  border: 1px solid #eee;
+  background: #f0f0f0;
+  border-radius: 6px;
+  color: var(--default);
+  font-weight: 500;
+}
+.leftSideWrapper .listUl li a:hover {
+  color: var(--default);
+}
+.leftSideWrapper .listUl li a svg path {
+  transition: all ease-in-out 0.4s;
+}
+.leftSideWrapper .listUl li a svg path.svg2 {
+  opacity: 0;
+}
+.leftSideWrapper .listUl li a:hover svg path.svg2 {
+  opacity: 1;
+}
+.leftSideWrapper .listUl li a:hover svg path.svg1 {
+  opacity: 0;
+}
+.leftSideWrapper .listUl li a.active svg path.svg1 {
+  opacity: 0;
+}
+.leftSideWrapper .listUl li a.active svg path.svg2 {
+  opacity: 1;
+}
+
+.leftSideWrapper .listUl li a:hover {
+  border: 1px solid #eee;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* header start  */
+header {
+  padding: 32px 39px 24px 39px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .dropdown-toggle::after {
+  display: none;
+}
+
+header ul li button {
+  padding: 10px;
+  color: #131313;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid var(--Label-stroke-1);
+  background: var(--BG-fill-default);
+}
+header h1 {
+  color: rgba(19, 19, 19, 0.7);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+header .languageItem .dropdown .dropdown-menu {
+  width: 165px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--BG-fill);
+  box-shadow: 0 2px 9.1px 0 rgba(0, 0, 0, 0.25);
+}
+
+header .languageItem .dropdown .dropdown-menu li a .disabled {
+  border-bottom: 1px solid #fcfcfc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+header .languageItem .dropdown .dropdown-menu li a {
+  color: #131313;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+  padding: 4px 0;
+}
+header .languageItem .dropdown .dropdown-menu li a:focus {
+  background-color: var(--BG-fill-default);
+}
+aside.navbar {
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+aside .offcanvas-body {
+  padding: 24px 20px 24px 13px !important;
+  width: 282px !important;
+  border-right: 1px solid #e5e5e5;
+  background: #f9f9fb;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.menuRight {
+  gap: 24px;
+}
+
+.offcanvas-header button.position-absolute {
+  top: 20px;
+  right: 20px;
+}
+
+/* ========================================== Manik MT code start from here ====================================== */
+.w-740 {
+  max-width: 740px;
+  width: 100%;
+}
+.gap-20px {
+  gap: 20px;
+}
+.w-583 {
+  width: 583px;
+  max-width: 100%;
+}
+.dashbordBody {
+  padding-left: 39px;
+  padding-right: 39px;
+  margin-top: 16px;
+  padding-bottom: 24px;
+}
+.salvation {
+}
+
+.salvation .title h2 {
+  color: #131313;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.salvation .salvationText {
+}
+.cBox {
+  border-radius: 12px;
+  border: 1px solid var(--Label-stroke-1);
+  background: var(--BG-fill);
+  padding: 20px;
+  gap: 32px;
+}
+.salvation .salvationText p span {
+  color: #131313;
+}
+.salvation .salvationText p {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.salvation .salvationText p span {
+  color: #131313;
+}
+.salvation .salvationText p:last-child {
+  margin-bottom: 0;
+}
+.cLink {
+  border-radius: 100000px;
+  border: 1px solid var(--Gold-Chrome);
+  background: var(--Brand-Primary);
+  padding: 16px 32px;
+  color: var(--BG-fill);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  transition: all ease-in-out 0.4s;
+}
+.cLink:hover {
+  border: 1px solid var(--Brand-Primary);
+  color: var(--Brand-Primary);
+  background-color: #fff;
+}
+.salvation .title {
+  max-width: 120px;
+}
+/* testify start  */
+.testify {
+  max-width: 1036px;
+  gap: 20px;
+}
+.testify .title {
+  max-width: 260px;
+}
+.testify .title h2 {
+  color: #131313;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 12px;
+}
+.testify .title p {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 0;
+}
+.testify .testifyInput {
+}
+.cBox2 {
+  border-radius: 34px;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  padding: 20px;
+  gap: 24px;
+  width: 100%;
+  max-width: 756px;
+}
+.testify .testifyInput label {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  display: block;
+  margin-bottom: 28px;
+}
+.testify .testifyInput input::placeholder {
+  color: rgba(19, 19, 19, 0.2);
+}
+.testify .testifyInput input {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d7d7d8;
+  height: 67px;
+  color: rgba(19, 19, 19, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+/* networks start  */
+.networks {
+  max-width: 850px;
+  gap: 56px;
+}
+.networks .title {
+  max-width: 254px;
+}
+.networks .title h2 {
+  color: #131313;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 12px;
+}
+.networks .title p {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.networks .networksText {
+  max-width: 540px;
+}
+.networks .networksText .position-relative {
+}
+.networks .networksText h4 {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+.networks .networksText .position-relative {
+  padding-top: 12px;
+}
+.networks .networksText .position-relative label {
+  color: rgba(19, 19, 19, 0.6);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  padding: 0 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+.networks .networksText .position-relative select:focus {
+  box-shadow: none;
+}
+.networks .networksText .position-relative select {
+  height: 54px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d7d7d8;
+  color: rgba(19, 19, 19, 0.8);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* === dashboard end === */

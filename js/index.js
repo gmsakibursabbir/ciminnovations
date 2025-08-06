@@ -168,3 +168,27 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+// dropdown for seleted item
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.dropdown');
+  const button = dropdown.querySelector('button');
+  const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
+
+  dropdownItems.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const selectedText = this.textContent.trim();
+
+      // Update only the first text node of the button (before the SVG)
+      const firstTextNode = Array.from(button.childNodes).find(
+        node => node.nodeType === Node.TEXT_NODE
+      );
+
+      if (firstTextNode) {
+        firstTextNode.nodeValue = selectedText + ' ';
+      }
+    });
+  });
+});

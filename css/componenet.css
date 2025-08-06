@@ -15,9 +15,22 @@
   color: #d5f8cf;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cbtn-login:hover {
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 24px 32px -16px rgba(81, 7, 141, 0.25),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+  border: 1.3px solid transparent;
 }
 .cbtn-signup {
-    cursor: pointer;
+  cursor: pointer;
   display: inline-flex;
   width: 134px;
   height: 44px;
@@ -39,8 +52,12 @@
   color: var(--color-white);
   font-weight: 600;
   line-height: 140%;
+  transition: all 0.3s ease;
 }
-
+.cbtn-signup:hover {
+  background: white;
+  color: var(--color-text);
+}
 .hero-button-one {
   display: inline-flex;
   min-width: 295px;
@@ -52,7 +69,7 @@
   color: #ffffff;
   font-size: 16px;
   border-radius: 8px;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
   background: var(
     --Test-SS-gradient,
     radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
@@ -85,7 +102,7 @@
   gap: 8px;
   border-radius: 8px;
   border: 2px solid var(--color-pink);
-  transition: background 0.3s ease, color 0.3s ease;
+transition: all 0.3s ease;
 }
 .hero-button-two:hover {
   background: var(
@@ -114,6 +131,7 @@
   font-weight: 500;
   line-height: 27px;
   letter-spacing: -0.36px;
+  transition: all 0.3s ease;
   background: var(
     --Test-SS-gradient,
     radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
@@ -124,5 +142,9 @@
     0 4px 40px -16px rgba(237, 30, 187, 0.2),
     0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
     0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+}
+.pricing-pink:hover{
+  background: var(--color-white);
+  color: var(--color-text);
 }
 /* === landing page end === */
