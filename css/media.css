@@ -183,6 +183,13 @@
   .social-icons {
     justify-content: center;
   }
+  .hero-content{
+    width: 100%;
+  }
+  .myspace-content{
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* ========== Fold: 953px ========== */
@@ -190,6 +197,13 @@
 }
 /* ========== Mobile: 670px and below ========== */
 @media (max-width: 670px) {
+  .streamspace-content{
+  max-width: 100%;
+}
+  .myspace-content{
+    width: 100%;
+    max-width: 100%;
+  }
   .dashed-border {
     margin: 0 40px;
   }

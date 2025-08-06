@@ -259,6 +259,10 @@ ul li {
 .streamspace-gap {
   gap: 80px;
 }
+.streamspace-content{
+  max-width: 616px;
+  margin-left: auto;
+}
 .streamspace-content h2 {
   color: #faf9f3;
   font-family: var(--font-jakarta);
