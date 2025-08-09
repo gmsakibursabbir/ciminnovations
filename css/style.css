@@ -2798,4 +2798,92 @@ aside .offcanvas-body {
 .annunsmentBox-list a.activeXbtn {
   color: #131313;
 }
+#areaChart {
+  margin-top: 56px;
+  max-height: 366px;
+}
+.mt-ana {
+  margin-top: 35px;
+}
+.custom-table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.custom-table thead th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px;
+}
+.custom-table tbody td {
+  padding: 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+}
+.status-online {
+  color: #059669;
+  font-weight: 500;
+}
+.status-offline {
+  color: #9ca3af;
+  font-weight: 500;
+}
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+.pagination .page-item.active .page-link {
+  border-radius: 6px;
+  border: 1px solid rgba(28, 25, 23, 0.09);
+  background: #33c4c4;
+  color: #fff;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.pagination .page-link {
+  color: #6b7280;
+  border-color: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 22px;
+  height: 22px;
+}
+.pagination .page-item:last-child .page-link {
+  color:  #0F172A;
+  font-weight:  400;
+  line-height: 150%; 
+}
+.pagination .page-item:first-child .page-link {
+  color:  #a3a3a3;
+  font-weight:  400;
+  line-height: 150%; 
+}
+
+.pagination .page-item:first-child.disabled .page-link {
+  background-color: transparent; 
+  color: #A3A3A3;
+  border-color: transparent;
+}
+.page-item:first-child span{
+  margin-right: 6px;
+}
+.page-item:last-child {
+  color: #0F172A;
+}
+.page-item:last-child span{
+  margin-left: 6px;
+}
 /* === db streaming end === */
