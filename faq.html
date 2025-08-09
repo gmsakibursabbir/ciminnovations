@@ -51,10 +51,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Responsive midea css -->
     <link rel="stylesheet" href="./css/media.css" />
-    <title>Home Visitor</title>
+    <title>FAQ</title>
   </head>
 
-  <body class="body-inter">
+  <body class="body-admin">
     <main>
       <aside class="navbar navbar-expand-xl position-fixed z-3">
         <div
@@ -95,7 +95,7 @@
                 <li>
                   <a
                     href=""
-                    class="d-flex flex-row flex-wrap align-items-center p-10px active"
+                    class="d-flex flex-row flex-wrap align-items-center p-10px "
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +199,7 @@
                 <li>
                   <a
                     href=""
-                    class="d-flex flex-row flex-wrap align-items-center p-10px"
+                    class="d-flex flex-row flex-wrap align-items-center p-10px active"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -256,12 +256,12 @@
       </aside>
 
       <!-- wrapper start  -->
-      <div class="dashbordWrapper dashbordWrapper-white">
+      <div class="dashbordWrapper dashbordWrapper-pale">
         <!-- header  -->
         <header
-          class="d-flex flex-row justify-content-between align-items-center "
+          class="d-flex flex-row justify-content-between align-items-center"
         >
-          <h1>Dashboard</h1>
+          <h1>Questions</h1>
           <ul class="d-flex flex-row align-items-center menuRight">
             <li class="languageItem">
               <div class="dropdown">
@@ -316,7 +316,14 @@
                 </ul>
               </div>
             </li>
-
+            <li>
+              <a href=""><img src="./assets/img/setting.svg" alt="user" /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./assets/img/notifications.svg" alt="user"
+              /></a>
+            </li>
             <li class="d-xl-none d-block">
               <a href=""><img src="./assets/img/user.png" alt="user" /></a>
             </li>
@@ -334,139 +341,321 @@
           </ul>
         </header>
         <!-- wrapper body  -->
-        <div class="d-flex flex-column dashbordBody">
-          <!-- banner start -->
-          <div class="bannerWrapper">
-            <div class="banner-box">
-              <img
-                src="./assets/img/user-banner.png"
-                alt="banner"
-                class="w-100"
-              />
+        <div class="dashbordBody">
+          <!-- salvation start  -->
+          <section class="testify d-flex flex-row flex-wrap">
+            <div class="title">
+              <h2>Frequently Asked Questions (FAQs)</h2>
+              <p>
+                Have questions we didn’t cover?
+                <a href="#" class="cMail">Send us an email.</a>
+              </p>
             </div>
-            <img
-              src="./assets/img/user-avater.png"
-              alt="avater"
-              class="userAvater"
-            />
-          </div>
-          <!-- banner end -->
-          <div class="welcome-text">
-            <h3>Welcome to <span>Sam Lee’s</span> Streamspace.</h3>
-          </div>
-          <!-- stream start -->
-          <div class="stream-box w-100">
-            <h2>Your Stream</h2>
-            <!-- stream player -->
-            <div class="stream-player position-relative">
-              <img
-                src="./assets/img/stream-player.png"
-                alt="player"
-                class="w-100"
-              />
-              <!-- controls -->
-              <div class="player-controls">
-                <!-- 1 -->
-                <div class="d-flex align-items-center gap-16">
-                  <button><img src="./assets/svg/pause.svg" alt="" /></button>
-                  <button>
-                    <img src="./assets/svg/SpeakerSimpleHigh.svg" alt="" />
-                  </button>
-                  <span class="live">Live</span>
+            <div class="d-flex flex-column">
+              <!-- Main Accordion Container -->
+              <div class="accordion faq-accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span>Where is the traffic from?</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
+                  </div>
                 </div>
-                <!-- 2 -->
-                <div class="d-flex align-items-center gap-16">
-                  <button><img src="./assets/svg/GearSix.svg" alt="" /></button>
-                  <button>
-                    <img src="./assets/svg/FrameCorners.svg" alt="" />
-                  </button>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        >Can I get my target traffic to location of
+                        choice?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- player info -->
-            <div class="player-info">
-              <!-- 1 -->
-              <div class="d-flex align-items-center gap-16">
-                <button class="donate-btn">
-                  <span>Donate</span>
-                  <img src="./assets/svg/donate.svg" alt="" />
-                </button>
-                <button class="share-btn">
-                  <span>Share</span>
-                  <img src="./assets/svg/ShareNetwork.svg" alt="" />
-                </button>
-              </div>
-              <!-- 2 -->
-              <div class="d-flex align-items-center gap-16">
-                <button class="clr-bnts">
-                  <img src="./assets/svg/userss.svg" alt="" />
-                  <span>34</span>
-                </button>
-                <button class="clr-bnts">
-                  <span>2</span>
-                  <img src="./assets/svg/Chat.svg" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- stream end -->
-          <!-- active start -->
-          <div class="stream-box w-100">
-            <h2>Your Stream</h2>
-            <!-- stream list start -->
-            <div class="stream-list">
-              <!-- 1 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-01.png" alt=""  class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span>Does it add to my Rhapsody records?</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
+                  </div>
                 </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Ziza Rhakut</h5>
-                    <h6>Zone B Home Cell</h6>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span>Why do I have few views?</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        >I don't have a valid Visa/Mastercard. How do I
+                        pay?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        >My campaign didn't run and my event is over. What do I
+                        do?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven"
+                    >
+                      <span class="faq-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM13.5672 9.19219L10.4422 12.3172C10.3841 12.3753 10.3152 12.4214 10.2393 12.4529C10.1635 12.4843 10.0821 12.5005 10 12.5005C9.91787 12.5005 9.83654 12.4843 9.76067 12.4529C9.68479 12.4214 9.61586 12.3753 9.55782 12.3172L6.43282 9.19219C6.31554 9.07491 6.24966 8.91585 6.24966 8.75C6.24966 8.58415 6.31554 8.42509 6.43282 8.30781C6.55009 8.19054 6.70915 8.12465 6.875 8.12465C7.04086 8.12465 7.19992 8.19054 7.31719 8.30781L10 10.9914L12.6828 8.30781C12.7409 8.24974 12.8098 8.20368 12.8857 8.17225C12.9616 8.14083 13.0429 8.12465 13.125 8.12465C13.2071 8.12465 13.2884 8.14083 13.3643 8.17225C13.4402 8.20368 13.5091 8.24974 13.5672 8.30781C13.6253 8.36588 13.6713 8.43482 13.7027 8.51069C13.7342 8.58656 13.7504 8.66788 13.7504 8.75C13.7504 8.83212 13.7342 8.91344 13.7027 8.98931C13.6713 9.06518 13.6253 9.13412 13.5672 9.19219Z"
+                            fill="#131313"
+                            fill-opacity="0.6"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        >I added a custom program link, but it's not working.
+                        Why?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      This is the placeholder answer for the question. You can
+                      replace this text with the actual answer.
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- 2 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-02.png" alt="" class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Rohan Kushi</h5>
-                    <h6>Worship Session</h6>
-                  </div>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-03.png" alt="" class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Ziza Rhakut</h5>
-                    <h6>Sky Watching</h6>
-                  </div>
-                </div>
-              </div>
             </div>
-            <!-- stream list end -->
-          </div>
-          <!-- active end -->
+          </section>
+          <!-- salvation end -->
         </div>
       </div>
       <!-- wrapper end -->
@@ -478,6 +667,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

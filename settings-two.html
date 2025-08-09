@@ -51,10 +51,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Responsive midea css -->
     <link rel="stylesheet" href="./css/media.css" />
-    <title>Home Visitor</title>
+    <title>Network</title>
   </head>
 
-  <body class="body-inter">
+  <body class="body-admin">
     <main>
       <aside class="navbar navbar-expand-xl position-fixed z-3">
         <div
@@ -95,7 +95,7 @@
                 <li>
                   <a
                     href=""
-                    class="d-flex flex-row flex-wrap align-items-center p-10px active"
+                    class="d-flex flex-row flex-wrap align-items-center p-10px"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -256,12 +256,12 @@
       </aside>
 
       <!-- wrapper start  -->
-      <div class="dashbordWrapper dashbordWrapper-white">
+      <div class="dashbordWrapper dashbordWrapper-pale">
         <!-- header  -->
         <header
-          class="d-flex flex-row justify-content-between align-items-center "
+          class="d-flex flex-row justify-content-between align-items-center"
         >
-          <h1>Dashboard</h1>
+          <h1>Settings</h1>
           <ul class="d-flex flex-row align-items-center menuRight">
             <li class="languageItem">
               <div class="dropdown">
@@ -316,7 +316,16 @@
                 </ul>
               </div>
             </li>
-
+            <li>
+              <a href=""
+                ><img src="./assets/svg/gear-active.svg" alt="user"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./assets/img/notifications.svg" alt="user"
+              /></a>
+            </li>
             <li class="d-xl-none d-block">
               <a href=""><img src="./assets/img/user.png" alt="user" /></a>
             </li>
@@ -334,145 +343,549 @@
           </ul>
         </header>
         <!-- wrapper body  -->
-        <div class="d-flex flex-column dashbordBody">
-          <!-- banner start -->
-          <div class="bannerWrapper">
-            <div class="banner-box">
-              <img
-                src="./assets/img/user-banner.png"
-                alt="banner"
-                class="w-100"
-              />
-            </div>
-            <img
-              src="./assets/img/user-avater.png"
-              alt="avater"
-              class="userAvater"
-            />
-          </div>
-          <!-- banner end -->
-          <div class="welcome-text">
-            <h3>Welcome to <span>Sam Lee’s</span> Streamspace.</h3>
-          </div>
-          <!-- stream start -->
-          <div class="stream-box w-100">
-            <h2>Your Stream</h2>
-            <!-- stream player -->
-            <div class="stream-player position-relative">
-              <img
-                src="./assets/img/stream-player.png"
-                alt="player"
-                class="w-100"
-              />
-              <!-- controls -->
-              <div class="player-controls">
-                <!-- 1 -->
-                <div class="d-flex align-items-center gap-16">
-                  <button><img src="./assets/svg/pause.svg" alt="" /></button>
-                  <button>
-                    <img src="./assets/svg/SpeakerSimpleHigh.svg" alt="" />
-                  </button>
-                  <span class="live">Live</span>
-                </div>
-                <!-- 2 -->
-                <div class="d-flex align-items-center gap-16">
-                  <button><img src="./assets/svg/GearSix.svg" alt="" /></button>
-                  <button>
-                    <img src="./assets/svg/FrameCorners.svg" alt="" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- player info -->
-            <div class="player-info">
-              <!-- 1 -->
-              <div class="d-flex align-items-center gap-16">
-                <button class="donate-btn">
-                  <span>Donate</span>
-                  <img src="./assets/svg/donate.svg" alt="" />
-                </button>
-                <button class="share-btn">
-                  <span>Share</span>
-                  <img src="./assets/svg/ShareNetwork.svg" alt="" />
-                </button>
-              </div>
-              <!-- 2 -->
-              <div class="d-flex align-items-center gap-16">
-                <button class="clr-bnts">
-                  <img src="./assets/svg/userss.svg" alt="" />
-                  <span>34</span>
-                </button>
-                <button class="clr-bnts">
-                  <span>2</span>
-                  <img src="./assets/svg/Chat.svg" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- stream end -->
-          <!-- active start -->
-          <div class="stream-box w-100">
-            <h2>Your Stream</h2>
-            <!-- stream list start -->
-            <div class="stream-list">
-              <!-- 1 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-01.png" alt=""  class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Ziza Rhakut</h5>
-                    <h6>Zone B Home Cell</h6>
+        <div class="dashbordBody">
+          <!-- Tab Group 1 -->
+          <div class="custom-tabs-wrapper">
+            <ul class="nav custom-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#profile1">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#program1">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#addon1">Add-on</a>
+              </li>
+            </ul>
+            <div class="tab-content tab-top-mt">
+              <div class="tab-pane fade show active" id="profile1">
+                <section
+                  class="profile d-flex flex-column flex-wrap profile-gap"
+                >
+                  <!-- notification -->
+                  <div
+                    class="notification-box non-notification-box"
+                    bis_skin_checked="1"
+                  >
+                    <div bis_skin_checked="1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM10 16.875C8.64026 16.875 7.31105 16.4718 6.18046 15.7164C5.04987 14.9609 4.16868 13.8872 3.64833 12.6309C3.12798 11.3747 2.99183 9.99237 3.2571 8.65875C3.52238 7.32513 4.17716 6.10013 5.13864 5.13864C6.10013 4.17716 7.32514 3.52237 8.65876 3.2571C9.99238 2.99183 11.3747 3.12798 12.631 3.64833C13.8872 4.16868 14.9609 5.04987 15.7164 6.18045C16.4718 7.31104 16.875 8.64025 16.875 10C16.8729 11.8227 16.1479 13.5702 14.8591 14.8591C13.5702 16.1479 11.8227 16.8729 10 16.875ZM11.25 13.75C11.25 13.9158 11.1842 14.0747 11.0669 14.1919C10.9497 14.3092 10.7908 14.375 10.625 14.375C10.2935 14.375 9.97554 14.2433 9.74112 14.0089C9.5067 13.7745 9.375 13.4565 9.375 13.125V10C9.20924 10 9.05027 9.93415 8.93306 9.81694C8.81585 9.69973 8.75 9.54076 8.75 9.375C8.75 9.20924 8.81585 9.05027 8.93306 8.93306C9.05027 8.81585 9.20924 8.75 9.375 8.75C9.70652 8.75 10.0245 8.8817 10.2589 9.11612C10.4933 9.35054 10.625 9.66848 10.625 10V13.125C10.7908 13.125 10.9497 13.1908 11.0669 13.3081C11.1842 13.4253 11.25 13.5842 11.25 13.75ZM8.75 6.5625C8.75 6.37708 8.80499 6.19582 8.908 6.04165C9.01101 5.88748 9.15743 5.76732 9.32874 5.69636C9.50004 5.62541 9.68854 5.60684 9.8704 5.64301C10.0523 5.67919 10.2193 5.76848 10.3504 5.89959C10.4815 6.0307 10.5708 6.19775 10.607 6.3796C10.6432 6.56146 10.6246 6.74996 10.5536 6.92127C10.4827 7.09257 10.3625 7.23899 10.2084 7.342C10.0542 7.44502 9.87292 7.5 9.6875 7.5C9.43886 7.5 9.20041 7.40123 9.02459 7.22541C8.84878 7.0496 8.75 6.81114 8.75 6.5625Z"
+                          fill="#68BFBF"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div bis_skin_checked="1">
+                      <p class="mb-1">
+                        You are on the Free Plan. Upgrade your plan to unlock
+                        advanced features
+                      </p>
+                      <a href="#">Select plan</a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-02.png" alt="" class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Rohan Kushi</h5>
-                    <h6>Worship Session</h6>
+                  <!-- form -->
+                  <div class="d-flex flex-column profileText cBox2">
+                    <div class="">
+                      <h4>Personal information</h4>
+                      <form action="" class="profileForm">
+                        <!-- 1 -->
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="d-flex flex-row justify-content-between align-items-center w-100"
+                            >
+                              <div class="position-relative w-100">
+                                <label for="testimony">Full legal name</label>
+                                <input
+                                  type="text"
+                                  class="form-control newformInput"
+                                  placeholder="Sam Lee"
+                                />
+                                <span class="custom-icon"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="17"
+                                    viewBox="0 0 16 17"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M14.4325 13.7497C13.4806 12.1041 12.0137 10.9241 10.3019 10.3647C11.1486 9.86066 11.8065 9.09255 12.1745 8.17837C12.5425 7.26419 12.6002 6.2545 12.3388 5.30435C12.0774 4.35419 11.5113 3.51612 10.7275 2.91883C9.94366 2.32153 8.98544 1.99805 7.99999 1.99805C7.01453 1.99805 6.05632 2.32153 5.2725 2.91883C4.48869 3.51612 3.92261 4.35419 3.6612 5.30435C3.39979 6.2545 3.4575 7.26419 3.82548 8.17837C4.19345 9.09255 4.85134 9.86066 5.69811 10.3647C3.98624 10.9235 2.51936 12.1035 1.56749 13.7497C1.53258 13.8067 1.50943 13.87 1.49939 13.936C1.48936 14.002 1.49265 14.0694 1.50906 14.1341C1.52548 14.1988 1.55469 14.2596 1.59498 14.3128C1.63527 14.3661 1.68581 14.4107 1.74363 14.4441C1.80144 14.4775 1.86536 14.499 1.93162 14.5073C1.99787 14.5156 2.06511 14.5105 2.12937 14.4924C2.19364 14.4743 2.25362 14.4435 2.30579 14.4018C2.35796 14.3601 2.40125 14.3084 2.43311 14.2497C3.61061 12.2147 5.69186 10.9997 7.99999 10.9997C10.3081 10.9997 12.3894 12.2147 13.5669 14.2497C13.5987 14.3084 13.642 14.3601 13.6942 14.4018C13.7463 14.4435 13.8063 14.4743 13.8706 14.4924C13.9349 14.5105 14.0021 14.5156 14.0684 14.5073C14.1346 14.499 14.1985 14.4775 14.2563 14.4441C14.3142 14.4107 14.3647 14.3661 14.405 14.3128C14.4453 14.2596 14.4745 14.1988 14.4909 14.1341C14.5073 14.0694 14.5106 14.002 14.5006 13.936C14.4905 13.87 14.4674 13.8067 14.4325 13.7497ZM4.49999 6.49975C4.49999 5.80751 4.70526 5.13082 5.08984 4.55525C5.47443 3.97968 6.02105 3.53108 6.66059 3.26617C7.30014 3.00126 8.00387 2.93195 8.6828 3.067C9.36174 3.20205 9.98538 3.53539 10.4749 4.02487C10.9643 4.51436 11.2977 5.138 11.4327 5.81693C11.5678 6.49586 11.4985 7.1996 11.2336 7.83914C10.9687 8.47868 10.5201 9.02531 9.94448 9.40989C9.36891 9.79448 8.69222 9.99975 7.99999 9.99975C7.07203 9.99875 6.18237 9.62969 5.52621 8.97353C4.87005 8.31736 4.50098 7.4277 4.49999 6.49975Z"
+                                      fill="#131313"
+                                    /></svg
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div
+                              class="d-flex flex-row justify-content-between align-items-center w-100"
+                            >
+                              <div class="position-relative w-100">
+                                <label for="testimony">Date of birth</label>
+                                <input
+                                  type="date"
+                                  class="form-control newformInput"
+                                  placeholder="15/04/2000"
+                                />
+                                <span class="custom-icon"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="17"
+                                    viewBox="0 0 16 17"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M13 2.5H11.5V2C11.5 1.86739 11.4473 1.74021 11.3536 1.64645C11.2598 1.55268 11.1326 1.5 11 1.5C10.8674 1.5 10.7402 1.55268 10.6464 1.64645C10.5527 1.74021 10.5 1.86739 10.5 2V2.5H5.5V2C5.5 1.86739 5.44732 1.74021 5.35355 1.64645C5.25979 1.55268 5.13261 1.5 5 1.5C4.86739 1.5 4.74021 1.55268 4.64645 1.64645C4.55268 1.74021 4.5 1.86739 4.5 2V2.5H3C2.73478 2.5 2.48043 2.60536 2.29289 2.79289C2.10536 2.98043 2 3.23478 2 3.5V13.5C2 13.7652 2.10536 14.0196 2.29289 14.2071C2.48043 14.3946 2.73478 14.5 3 14.5H13C13.2652 14.5 13.5196 14.3946 13.7071 14.2071C13.8946 14.0196 14 13.7652 14 13.5V3.5C14 3.23478 13.8946 2.98043 13.7071 2.79289C13.5196 2.60536 13.2652 2.5 13 2.5ZM4.5 3.5V4C4.5 4.13261 4.55268 4.25979 4.64645 4.35355C4.74021 4.44732 4.86739 4.5 5 4.5C5.13261 4.5 5.25979 4.44732 5.35355 4.35355C5.44732 4.25979 5.5 4.13261 5.5 4V3.5H10.5V4C10.5 4.13261 10.5527 4.25979 10.6464 4.35355C10.7402 4.44732 10.8674 4.5 11 4.5C11.1326 4.5 11.2598 4.44732 11.3536 4.35355C11.4473 4.25979 11.5 4.13261 11.5 4V3.5H13V5.5H3V3.5H4.5ZM13 13.5H3V6.5H13V13.5Z"
+                                      fill="#131313"
+                                    /></svg
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="row">
+                          <div class="col">
+                            <div class="row zero-pad">
+                              <div class="col col-lg-5 zero-pad-right">
+                                <div
+                                  class="position-relative country-select-wrapper"
+                                >
+                                  <label for="countrySelect">Country</label>
+                                  <div class="country-select-container">
+                                    <img
+                                      id="countryFlag"
+                                      src="https://flagcdn.com/w20/ng.png"
+                                      alt="Flag"
+                                      class="country-flag"
+                                    />
+                                    <select
+                                      id="countrySelect"
+                                      class="form-select country-select"
+                                      aria-label="Select country"
+                                    >
+                                      <option value="NG" selected>+234</option>
+                                      <option value="US">+1</option>
+                                      <option value="GB">+44</option>
+                                      <option value="IN">+91</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col col-lg-7 zero-pad-left">
+                                <div
+                                  class="d-flex flex-row justify-content-between align-items-center w-100"
+                                >
+                                  <div class="position-relative w-100">
+                                    <label for="testimony">Phone number</label>
+                                    <input
+                                      type="tel"
+                                      class="form-control newformInput"
+                                      placeholder="7043567890"
+                                    />
+                                    <span class="custom-icon"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div
+                              class="d-flex flex-row justify-content-between align-items-center w-100"
+                            >
+                              <div class="position-relative w-100">
+                                <label for="testimony">Email</label>
+                                <input
+                                  type="mail"
+                                  class="form-control newformInput"
+                                  placeholder="Samlee@gmail.com"
+                                />
+                                <span class="custom-icon"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="17"
+                                    viewBox="0 0 16 17"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M8 2C6.27609 2 4.62279 2.68482 3.40381 3.90381C2.18482 5.12279 1.5 6.77609 1.5 8.5C1.5 10.2239 2.18482 11.8772 3.40381 13.0962C4.62279 14.3152 6.27609 15 8 15C9.34438 15 10.7562 14.595 11.7769 13.9169C11.8316 13.8805 11.8786 13.8337 11.9152 13.7792C11.9518 13.7247 11.9774 13.6635 11.9903 13.5991C12.0033 13.5347 12.0035 13.4684 11.9908 13.4039C11.9782 13.3395 11.9529 13.2781 11.9166 13.2234C11.8802 13.1687 11.8334 13.1217 11.7789 13.0851C11.7244 13.0485 11.6632 13.0229 11.5988 13.01C11.5344 12.997 11.4681 12.9968 11.4036 13.0095C11.3392 13.0222 11.2778 13.0474 11.2231 13.0837C10.375 13.6487 9.13812 14 8 14C6.9122 14 5.84883 13.6774 4.94436 13.0731C4.03989 12.4687 3.33494 11.6098 2.91866 10.6048C2.50238 9.59977 2.39346 8.4939 2.60568 7.427C2.8179 6.36011 3.34172 5.3801 4.11091 4.61091C4.8801 3.84172 5.86011 3.3179 6.927 3.10568C7.9939 2.89346 9.09977 3.00238 10.1048 3.41866C11.1098 3.83494 11.9687 4.53989 12.5731 5.44436C13.1774 6.34883 13.5 7.4122 13.5 8.5C13.5 10.1531 12.82 10.5 12.25 10.5C11.68 10.5 11 10.1531 11 8.5V6C11 5.86739 10.9473 5.74021 10.8536 5.64645C10.7598 5.55268 10.6326 5.5 10.5 5.5C10.3674 5.5 10.2402 5.55268 10.1464 5.64645C10.0527 5.74021 10 5.86739 10 6V6.26625C9.5513 5.86396 8.99184 5.60612 8.39451 5.52634C7.79718 5.44655 7.18966 5.54852 6.65111 5.81895C6.11255 6.08938 5.66793 6.51573 5.37515 7.04247C5.08238 7.56922 4.95503 8.17192 5.0097 8.77207C5.06437 9.37223 5.29852 9.942 5.68165 10.4072C6.06477 10.8724 6.57912 11.2114 7.15767 11.38C7.73622 11.5487 8.35216 11.5392 8.92525 11.3528C9.49833 11.1664 10.002 10.8117 10.3706 10.335C10.7456 11.085 11.3925 11.5 12.25 11.5C13.6588 11.5 14.5 10.3787 14.5 8.5C14.4982 6.77665 13.8128 5.12441 12.5942 3.90582C11.3756 2.68722 9.72335 2.00182 8 2ZM8 10.5C7.60444 10.5 7.21776 10.3827 6.88886 10.1629C6.55996 9.94318 6.30362 9.63082 6.15224 9.26537C6.00087 8.89991 5.96126 8.49778 6.03843 8.10982C6.1156 7.72186 6.30608 7.36549 6.58579 7.08579C6.86549 6.80608 7.22186 6.6156 7.60982 6.53843C7.99778 6.46126 8.39991 6.50087 8.76537 6.65224C9.13082 6.80362 9.44318 7.05996 9.66294 7.38886C9.8827 7.71776 10 8.10444 10 8.5C10 9.03043 9.78929 9.53914 9.41421 9.91421C9.03914 10.2893 8.53043 10.5 8 10.5Z"
+                                      fill="#131313"
+                                    /></svg
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="row">
+                          <div class="col-lg-5 zero-pad-right">
+                            <div
+                              class="d-flex flex-row justify-content-between align-items-center w-100"
+                            >
+                              <div class="position-relative w-100">
+                                <label for="testimony">Address</label>
+                                <input
+                                  type="text"
+                                  class="form-control newformInput"
+                                  placeholder="123 Park lane, Ikoyi"
+                                />
+                                <span class="custom-icon"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="17"
+                                    viewBox="0 0 16 17"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M5.19938 11.4C5.25192 11.4395 5.31174 11.4682 5.37541 11.4846C5.43908 11.5009 5.50535 11.5046 5.57042 11.4953C5.6355 11.486 5.6981 11.464 5.75466 11.4305C5.81121 11.3969 5.8606 11.3526 5.9 11.3C6.20273 10.8964 6.59528 10.5688 7.04656 10.3431C7.49784 10.1175 7.99545 10 8.5 10C9.00455 10 9.50216 10.1175 9.95344 10.3431C10.4047 10.5688 10.7973 10.8964 11.1 11.3C11.1394 11.3525 11.1888 11.3968 11.2453 11.4302C11.3018 11.4637 11.3643 11.4857 11.4293 11.495C11.4943 11.5043 11.5605 11.5007 11.6241 11.4844C11.6877 11.4681 11.7475 11.4394 11.8 11.4C11.8525 11.3606 11.8968 11.3112 11.9302 11.2547C11.9637 11.1982 11.9857 11.1357 11.995 11.0707C12.0043 11.0057 12.0007 10.9395 11.9844 10.8759C11.9681 10.8123 11.9394 10.7525 11.9 10.7C11.4573 10.1064 10.8669 9.63905 10.1875 9.34437C10.5598 9.00446 10.8206 8.55993 10.9358 8.06912C11.0509 7.57832 11.015 7.06416 10.8327 6.59414C10.6504 6.12411 10.3303 5.72019 9.91433 5.43536C9.49837 5.15053 9.00601 4.99812 8.50187 4.99812C7.99774 4.99812 7.50538 5.15053 7.08942 5.43536C6.67346 5.72019 6.35332 6.12411 6.17103 6.59414C5.98874 7.06416 5.95281 7.57832 6.06796 8.06912C6.1831 8.55993 6.44394 9.00446 6.81625 9.34437C6.13552 9.63849 5.54378 10.1059 5.1 10.7C5.02037 10.806 4.9861 10.9393 5.00474 11.0706C5.02337 11.2018 5.09339 11.3203 5.19938 11.4ZM7 7.5C7 7.20333 7.08797 6.91332 7.2528 6.66664C7.41762 6.41997 7.65189 6.22771 7.92597 6.11418C8.20006 6.00065 8.50166 5.97094 8.79264 6.02882C9.08361 6.0867 9.35088 6.22956 9.56066 6.43934C9.77044 6.64912 9.9133 6.91639 9.97118 7.20736C10.0291 7.49834 9.99935 7.79994 9.88582 8.07403C9.77229 8.34811 9.58003 8.58238 9.33335 8.7472C9.08668 8.91203 8.79667 9 8.5 9C8.10218 9 7.72064 8.84196 7.43934 8.56066C7.15804 8.27936 7 7.89782 7 7.5ZM13 2H4C3.73478 2 3.48043 2.10536 3.29289 2.29289C3.10536 2.48043 3 2.73478 3 3V4.5H2C1.86739 4.5 1.74021 4.55268 1.64645 4.64645C1.55268 4.74021 1.5 4.86739 1.5 5C1.5 5.13261 1.55268 5.25979 1.64645 5.35355C1.74021 5.44732 1.86739 5.5 2 5.5H3V8H2C1.86739 8 1.74021 8.05268 1.64645 8.14645C1.55268 8.24021 1.5 8.36739 1.5 8.5C1.5 8.63261 1.55268 8.75979 1.64645 8.85355C1.74021 8.94732 1.86739 9 2 9H3V11.5H2C1.86739 11.5 1.74021 11.5527 1.64645 11.6464C1.55268 11.7402 1.5 11.8674 1.5 12C1.5 12.1326 1.55268 12.2598 1.64645 12.3536C1.74021 12.4473 1.86739 12.5 2 12.5H3V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H13C13.2652 15 13.5196 14.8946 13.7071 14.7071C13.8946 14.5196 14 14.2652 14 14V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2ZM13 14H4V3H13V14Z"
+                                      fill="#131313"
+                                    /></svg
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 zero-pad-right zero-pad-left">
+                            <div class="position-relative">
+                              <label for="testimony">Zone</label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>Select Zone</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 zero-pad-left">
+                            <div class="position-relative">
+                              <label for="testimony">Language</label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>English</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class=""></div>
                   </div>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-03.png" alt="" class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Ziza Rhakut</h5>
-                    <h6>Sky Watching</h6>
+                  <!-- testimony -->
+                  <div class="d-flex flex-column profileText cBox2">
+                    <div class="">
+                      <h4>Testimony</h4>
+                      <div class="position-relative">
+                        <input
+                          type="text"
+                          class="form-control newformInputTwo"
+                          placeholder="Write testimony"
+                        />
+                      </div>
+                    </div>
+                    <div class="">
+                      <a href="" class="cLink">Share testimony</a>
+                    </div>
                   </div>
-                </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="program1">
+                <section
+                  class="profile d-flex flex-column flex-wrap profile-gap"
+                >
+                  <!-- form -->
+                  <div class="d-flex flex-column profileText cBox2">
+                    <div class="">
+                      <h4>Create New Program</h4>
+                      <form action="" class="profileForm prg-wd">
+                        <!-- 1 -->
+                        <div class="d-flex flex-column gap-28px">
+                          <div class="position-relative w-100">
+                            <label for="testimony">Programe Title</label>
+                            <input
+                              type="text"
+                              class="form-control newformInput"
+                              placeholder="Name of Program/Stream"
+                            />
+                            <span class="custom-icon"></span>
+                          </div>
+                          <div class="position-relative">
+                            <label for="testimony">Program source</label>
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Direct Link - .M3u8</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="position-relative w-100">
+                            <label for="testimony">Link</label>
+                            <input
+                              type="text"
+                              class="form-control newformInput"
+                              placeholder="Insert or embed"
+                            />
+                            <span class="custom-icon"></span>
+                          </div>
+                          <div>
+                            <p class="thumbnail">Add thumbnail</p>
+                            <div class="custom-file-wrapper">
+                              <label for="fileUpload" class="file-label"
+                                >Select image</label
+                              >
+                              <span id="fileName" class="file-name"
+                                >No file chosen</span
+                              >
+                              <input
+                                type="file"
+                                class="file-input"
+                                id="fileUpload"
+                                accept="image/*"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <button class="cbtn-addpg">Add Program</button>
+                          <p class="addpg-info">
+                            New programs are broadcasted immediately to your
+                            audience
+                          </p>
+                        </div>
+                      </form>
+                    </div>
+                    <div class=""></div>
+                  </div>
+                  <!-- testimony -->
+                  <div class="d-flex flex-column profileText cBox2">
+                    <div class="">
+                      <h4>Recently Created Programs</h4>
+
+                      <div class="rcp-list">
+                        <!-- 1 -->
+                        <div class="rcp-box">
+                          <div>
+                            <img src="./assets/img/lr-01.png" alt="" />
+                          </div>
+                          <div>
+                            <h4>RoR TV</h4>
+                            <p>
+                              https://dacastmmd.mmdlive.lldns.net/*******************************************************************************
+                            </p>
+                            <div class="rcp-box-btn">
+                              <span>General</span>
+                              <span>Live</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="rcp-box">
+                          <div>
+                            <img src="./assets/img/lr-01.png" alt="" />
+                          </div>
+                          <div>
+                            <h4>RoR TV</h4>
+                            <p>
+                              https://dacastmmd.mmdlive.lldns.net/*******************************************************************************
+                            </p>
+                            <div class="rcp-box-btn">
+                              <span>General</span>
+                              <span>Live</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="rcp-box">
+                          <div>
+                            <img src="./assets/img/lr-01.png" alt="" />
+                          </div>
+                          <div>
+                            <h4>RoR TV</h4>
+                            <p>
+                              https://dacastmmd.mmdlive.lldns.net/*******************************************************************************
+                            </p>
+                            <div
+                              class="rcp-box-btn d-flex justify-content-between align-items-center"
+                            >
+                              <div
+                                class="d-flex flex-row align-items-center gap-3"
+                              >
+                                <span>General</span> <span>Live</span>
+                              </div>
+                              <span
+                                ><img src="./assets/svg/Trash.svg" alt=""
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="rcp-box">
+                          <div>
+                            <img src="./assets/img/lr-01.png" alt="" />
+                          </div>
+                          <div>
+                            <h4>RoR TV</h4>
+                            <p>
+                              https://dacastmmd.mmdlive.lldns.net/*******************************************************************************
+                            </p>
+                            <div class="rcp-box-btn">
+                              <span>General</span>
+                              <span>Live</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="rcp-box">
+                          <div>
+                            <img src="./assets/img/lr-01.png" alt="" />
+                          </div>
+                          <div>
+                            <h4>RoR TV</h4>
+                            <p>
+                              https://dacastmmd.mmdlive.lldns.net/*******************************************************************************
+                            </p>
+                            <div class="rcp-box-btn">
+                              <span>General</span>
+                              <span>Live</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="rcp-box">
+                          <div>
+                            <img src="./assets/img/lr-01.png" alt="" />
+                          </div>
+                          <div>
+                            <h4>RoR TV</h4>
+                            <p>
+                              https://dacastmmd.mmdlive.lldns.net/*******************************************************************************
+                            </p>
+                            <div class="rcp-box-btn">
+                              <span>General</span>
+                              <span>Live</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="addon1">
+                <section
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="annunsmentBox w-100">
+                    <div class="annunsmentBox-list">
+                      <a href="./settings-two.html" class="">Announcement </a>
+                      <a href="./settings-two.html" class="activeXbtn">Event Room Banner</a>
+                    </div>
+                    <div class="d-flex flex-column profileText cBox2">
+                      <div class="">
+                        <h4>Add Event Banner</h4>
+                        <div class="">
+                          <div>
+                            <div class="custom-file-wrapper">
+                              <label for="fileUpload" class="file-label"
+                                >Select image</label
+                              >
+                              <span id="fileName" class="file-name"
+                                >No file chosen</span
+                              >
+                              <input
+                                type="file"
+                                class="file-input"
+                                id="fileUpload"
+                                accept="image/*"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="cbtn-addpg">Upload</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
-            <!-- stream list end -->
           </div>
-          <!-- active end -->
         </div>
       </div>
       <!-- wrapper end -->
     </main>
 
     <!-- JavaScript Bundle with Popper -->
+    <script>
+      const fileInput = document.getElementById("fileUpload");
+      const fileName = document.getElementById("fileName");
+
+      fileInput.addEventListener("change", function () {
+        fileName.textContent = this.files.length
+          ? this.files[0].name
+          : "No file chosen";
+      });
+    </script>
+    <script>
+      function initCustomTabs(wrapperSelector = ".custom-tabs-wrapper") {
+        document.querySelectorAll(wrapperSelector).forEach((wrapper) => {
+          const links = wrapper.querySelectorAll(".custom-tabs .nav-link");
+          const panes = wrapper.querySelectorAll(".tab-pane");
+
+          links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              // Remove active classes in this tab group
+              links.forEach((l) => l.classList.remove("active"));
+              panes.forEach((p) => p.classList.remove("show", "active"));
+
+              // Activate clicked tab
+              this.classList.add("active");
+              const targetId = this.getAttribute("href");
+              const targetPane = wrapper.querySelector(targetId);
+              if (targetPane) {
+                targetPane.classList.add("show", "active");
+              }
+            });
+          });
+        });
+      }
+
+      // Initialize all custom tabs on page load
+      initCustomTabs();
+    </script>
+    <script>
+      // Update flag when country changes
+      document
+        .getElementById("countrySelect")
+        .addEventListener("change", function () {
+          const countryCode = this.value.toLowerCase();
+          document.getElementById(
+            "countryFlag"
+          ).src = `https://flagcdn.com/w20/${countryCode}.png`;
+        });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

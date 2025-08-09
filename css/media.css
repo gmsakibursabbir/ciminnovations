@@ -6,8 +6,8 @@
   padding-left: 50px;
   padding-right: 50px;
 }
-.cpb-172x{
-  padding: 0px 0px 172px ;
+.cpb-172x {
+  padding: 0px 0px 172px;
 }
 .hamberger {
   display: none;
@@ -17,7 +17,9 @@
 }
 
 /* === Utility Classes === */
-
+.gap-16 {
+  gap: 16px;
+}
 .gap-32 {
   gap: 32px;
 }
@@ -54,7 +56,12 @@
 .cdp-b-130 {
   bottom: 130px !important;
 }
-
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .salvation .title {
+    max-width: 100% !important;
+  }
+}
 /* ========== Tablet:1199px ========== */
 @media (min-width: 1199.98px) {
   .dashbordWrapper {
@@ -68,6 +75,16 @@
 }
 /* ========== Tablet: 1024px ========== */
 @media (max-width: 1024px) {
+  .video-part {
+    padding: 32px 0px 57px;
+  }
+  .video-box {
+    min-height: 515px;
+    width: 100%;
+  }
+  .full-height-container {
+    grid-template-columns: 1fr 384px;
+  }
   .container-custom {
     padding-left: 32px;
     padding-right: 32px;
@@ -215,11 +232,78 @@
   }
 }
 
+/* ========== fablet: 991px ========== */
+@media (max-width: 991.99px) {
+  .faq-accordion .accordion-item {
+    max-width: 100%;
+    width: 100%;
+  }
+  aside .offcanvas-body {
+    padding: 20px 20px 20px 16px !important;
+    width: auto !important;
+    border-right: 0;
+    background: #f9f9fb;
+  }
+
+  .cLink {
+    border-radius: 6px;
+    background: #008b8b;
+    padding: 10px;
+    border-color: transparent;
+  }
+  .cLink:hover {
+    color: #008b8b;
+    border-color: #008b8b;
+  }
+  .networks {
+    gap: 24px;
+  }
+  .networks .networksText {
+    max-width: 100%;
+  }
+}
 /* ========== Fold: 953px ========== */
 @media (max-width: 953px) {
+  .full-height-container {
+    grid-template-columns: 1fr 353px;
+  }
 }
 /* ========== Mobile: 670px and below ========== */
 @media (max-width: 670px) {
+  .video-text {
+    width: 100%;
+  }
+  .top-info-stream-close {
+    width: 36px;
+    height: 36px;
+  }
+  .top-info-stream-close img {
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1;
+  }
+  .left-full-container-stream-mobile {
+    min-height: 1056px;
+  }
+  .right-full-container-mobile {
+    margin-top: -240px;
+    border-radius: 12px;
+  }
+  .close-x-sm {
+    display: inline-block;
+  }
+
+  .chat-right-contants {
+    margin-top: 24px;
+  }
+  .chatbottom-btn {
+    justify-content: start;
+  }
+  .full-height-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+  }
   .myspace-pink-lines {
     display: none;
   }
@@ -423,7 +507,7 @@
   .myspace-content p {
     font-size: 16px;
   }
- 
+
   .cdp-t-130 {
     margin-top: 0px !important;
   }
@@ -489,11 +573,72 @@
   .px-32-16 {
     padding: 24px 16px;
   }
+  .rcp-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 27px;
+  }
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .notifications .tab-content .notificationItem .TextItem h4 a {
+    font-size: 12px;
+  }
+  .notifications .tab-content .notificationItem .TextItem .time span {
+    font-size: 10px;
+  }
+  .video-part {
+    padding: 32px 0px 57px;
+  }
+  .video-box {
+    min-height: 763px;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 12px;
+  }
+  header {
+    padding: 20px 16px;
+  }
+  .salvation .title {
+    max-width: 100%;
+  }
+  .dashbordBody {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .salvation .title h2 {
+    font-size: 20px;
+  }
+  .testify {
+    gap: 32px;
+  }
+  .testify .testifyInput input {
+    height: 54px;
+  }
+  .notification-box.non-notification-box {
+    margin: 0 !important;
+    max-width: 100%;
+  }
+  .zero-pad-right {
+    padding-right: 8px !important;
+  }
+  .zero-pad-left {
+    padding-left: 8px !important;
+  }
+  .zero-inline {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
 }
 
 /* ========== Specific Mobile Devices (optional) ========== */
 @media (max-width: 430px) {
 }
-
+/*Extra small devices (portrait phones, less than 375px)*/
+@media (max-width: 375px) {
+  .menuRight {
+    gap: 12px;
+  }
+}
 @media (max-width: 393px) {
 }

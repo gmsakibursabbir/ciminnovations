@@ -38,7 +38,8 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,10 +52,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Responsive midea css -->
     <link rel="stylesheet" href="./css/media.css" />
-    <title>Home Visitor</title>
+    <title>Analytics</title>
   </head>
 
-  <body class="body-inter">
+  <body class="body-admin">
     <main>
       <aside class="navbar navbar-expand-xl position-fixed z-3">
         <div
@@ -95,7 +96,7 @@
                 <li>
                   <a
                     href=""
-                    class="d-flex flex-row flex-wrap align-items-center p-10px active"
+                    class="d-flex flex-row flex-wrap align-items-center p-10px"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -256,12 +257,12 @@
       </aside>
 
       <!-- wrapper start  -->
-      <div class="dashbordWrapper dashbordWrapper-white">
+      <div class="dashbordWrapper dashbordWrapper-pale">
         <!-- header  -->
         <header
-          class="d-flex flex-row justify-content-between align-items-center "
+          class="d-flex flex-row justify-content-between align-items-center"
         >
-          <h1>Dashboard</h1>
+          <h1>Analytics</h1>
           <ul class="d-flex flex-row align-items-center menuRight">
             <li class="languageItem">
               <div class="dropdown">
@@ -316,7 +317,16 @@
                 </ul>
               </div>
             </li>
-
+            <li>
+              <a href=""
+                ><img src="./assets/svg/gear-active.svg" alt="user"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./assets/img/notifications.svg" alt="user"
+              /></a>
+            </li>
             <li class="d-xl-none d-block">
               <a href=""><img src="./assets/img/user.png" alt="user" /></a>
             </li>
@@ -334,145 +344,224 @@
           </ul>
         </header>
         <!-- wrapper body  -->
-        <div class="d-flex flex-column dashbordBody">
-          <!-- banner start -->
-          <div class="bannerWrapper">
-            <div class="banner-box">
-              <img
-                src="./assets/img/user-banner.png"
-                alt="banner"
-                class="w-100"
-              />
-            </div>
-            <img
-              src="./assets/img/user-avater.png"
-              alt="avater"
-              class="userAvater"
-            />
-          </div>
-          <!-- banner end -->
-          <div class="welcome-text">
-            <h3>Welcome to <span>Sam Lee’s</span> Streamspace.</h3>
-          </div>
-          <!-- stream start -->
-          <div class="stream-box w-100">
-            <h2>Your Stream</h2>
-            <!-- stream player -->
-            <div class="stream-player position-relative">
-              <img
-                src="./assets/img/stream-player.png"
-                alt="player"
-                class="w-100"
-              />
-              <!-- controls -->
-              <div class="player-controls">
-                <!-- 1 -->
-                <div class="d-flex align-items-center gap-16">
-                  <button><img src="./assets/svg/pause.svg" alt="" /></button>
-                  <button>
-                    <img src="./assets/svg/SpeakerSimpleHigh.svg" alt="" />
-                  </button>
-                  <span class="live">Live</span>
-                </div>
-                <!-- 2 -->
-                <div class="d-flex align-items-center gap-16">
-                  <button><img src="./assets/svg/GearSix.svg" alt="" /></button>
-                  <button>
-                    <img src="./assets/svg/FrameCorners.svg" alt="" />
-                  </button>
+        <div class="dashbordBody">
+          <!-- salvation start  -->
+          <section class="analytics profile d-flex flex-row flex-wrap">
+            <div class="d-flex flex-column profileText cBox2">
+              <div class="all-select">
+                <div class="position-relative">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>All</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
               </div>
-            </div>
-            <!-- player info -->
-            <div class="player-info">
-              <!-- 1 -->
-              <div class="d-flex align-items-center gap-16">
-                <button class="donate-btn">
-                  <span>Donate</span>
-                  <img src="./assets/svg/donate.svg" alt="" />
-                </button>
-                <button class="share-btn">
-                  <span>Share</span>
-                  <img src="./assets/svg/ShareNetwork.svg" alt="" />
-                </button>
-              </div>
-              <!-- 2 -->
-              <div class="d-flex align-items-center gap-16">
-                <button class="clr-bnts">
-                  <img src="./assets/svg/userss.svg" alt="" />
-                  <span>34</span>
-                </button>
-                <button class="clr-bnts">
-                  <span>2</span>
-                  <img src="./assets/svg/Chat.svg" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- stream end -->
-          <!-- active start -->
-          <div class="stream-box w-100">
-            <h2>Your Stream</h2>
-            <!-- stream list start -->
-            <div class="stream-list">
-              <!-- 1 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-01.png" alt=""  class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
+              <div class="">
+                <div
+                  class="d-flex flex-row justify-content-between align-items-center analyticsBoxWrapper"
+                >
+                  <!-- 1 -->
+                  <div
+                    class="analyticsBox activebox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center upshare">
+                      <h4>12</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowUp.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="analyticsBox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center downshare">
+                      <h4>45.2%</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowDown.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div
+                    class="analyticsBox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center downshare">
+                      <h4>45.2%</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowDown.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    class="analyticsBox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center downshare">
+                      <h4>45.2%</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowDown.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
                 </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Ziza Rhakut</h5>
-                    <h6>Zone B Home Cell</h6>
+                <div
+                  class="d-flex flex-row justify-content-between align-items-center analyticsBoxWrapper mt-3"
+                >
+                  <!-- 1 -->
+                  <div
+                    class="analyticsBox activebox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center upshare">
+                      <h4>12</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowUp.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="analyticsBox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center downshare">
+                      <h4>45.2%</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowDown.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div
+                    class="analyticsBox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center downshare">
+                      <h4>45.2%</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowDown.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    class="analyticsBox d-flex justify-content-between flex-column"
+                  >
+                    <p>Visitors (Uniques)</p>
+                    <div class="d-flex flex-row align-items-center downshare">
+                      <h4>45.2%</h4>
+                      <span
+                        ><img
+                          src="./assets/svg/ArrowDown.svg"
+                          alt=""
+                        />200.0%</span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- 2 -->
               <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-02.png" alt="" class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Rohan Kushi</h5>
-                    <h6>Worship Session</h6>
-                  </div>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div>
-                <!-- player-list-img -->
-                <div class="player-list-img w-100">
-                  <img src="./assets/img/video-03.png" alt="" class="w-100 "/>
-                  <div class="live-boxs"><span class="live">Live</span></div>
-                </div>
-                <!-- player-list-text -->
-                <div class="player-list-text">
-                  <div><img src="./assets/img/channels.png" alt="" /></div>
-                  <div class="">
-                    <h5>Ziza Rhakut</h5>
-                    <h6>Sky Watching</h6>
-                  </div>
+                <canvas id="areaChart" height="150"></canvas>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+                  <button class="btn btn-range btn-active">Today</button>
+                  <button class="btn btn-range">1W</button>
+                  <button class="btn btn-range">1M</button>
+                  <button class="btn btn-range">3M</button>
+                  <button class="btn btn-range">1YR</button>
                 </div>
               </div>
             </div>
-            <!-- stream list end -->
-          </div>
-          <!-- active end -->
+          </section>
+          <!-- salvation end -->
         </div>
       </div>
       <!-- wrapper end -->
     </main>
 
     <!-- JavaScript Bundle with Popper -->
+    <script>
+      const ctx = document.getElementById("areaChart").getContext("2d");
+
+      // Create gradient
+      const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+      gradient.addColorStop(0, "rgba(0, 255, 255, 0.3)");
+      gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
+
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: Array(5).fill(""), // Needed for spacing
+          datasets: [
+            {
+              data: [0, 40, 60, 55, 45],
+              fill: true,
+              backgroundColor: gradient,
+              borderColor: "rgba(0, 255, 255, 0.8)",
+              borderWidth: 1.5,
+              tension: 0.4,
+              pointRadius: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: { enabled: false },
+          },
+          scales: {
+            x: { grid: { display: false }, ticks: { display: false } },
+            y: {
+              grid: { color: "rgba(0,0,0,0.05)" },
+              ticks: { display: false },
+            },
+          },
+        },
+      });
+    </script>
+    <script>
+      // Update flag when country changes
+      document
+        .getElementById("countrySelect")
+        .addEventListener("change", function () {
+          const countryCode = this.value.toLowerCase();
+          document.getElementById(
+            "countryFlag"
+          ).src = `https://flagcdn.com/w20/${countryCode}.png`;
+        });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

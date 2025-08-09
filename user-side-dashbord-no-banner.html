@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Responsive midea css -->
     <link rel="stylesheet" href="./css/media.css" />
-    <title>Home Visitor</title>
+    <title>User Home No Banner</title>
   </head>
 
   <body class="body-inter">
@@ -259,7 +259,7 @@
       <div class="dashbordWrapper dashbordWrapper-white">
         <!-- header  -->
         <header
-          class="d-flex flex-row justify-content-between align-items-center "
+          class="d-flex flex-row justify-content-between align-items-center"
         >
           <h1>Dashboard</h1>
           <ul class="d-flex flex-row align-items-center menuRight">
@@ -316,7 +316,14 @@
                 </ul>
               </div>
             </li>
-
+            <li>
+              <a href=""><img src="./assets/img/setting.svg" alt="user" /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./assets/img/notifications.svg" alt="user"
+              /></a>
+            </li>
             <li class="d-xl-none d-block">
               <a href=""><img src="./assets/img/user.png" alt="user" /></a>
             </li>
@@ -334,12 +341,13 @@
           </ul>
         </header>
         <!-- wrapper body  -->
+        <!-- wrapper body  -->
         <div class="d-flex flex-column dashbordBody">
           <!-- banner start -->
           <div class="bannerWrapper">
             <div class="banner-box">
               <img
-                src="./assets/img/user-banner.png"
+                src="./assets/img/no-banner.png"
                 alt="banner"
                 class="w-100"
               />
@@ -349,10 +357,77 @@
               alt="avater"
               class="userAvater"
             />
+            <button class="cedit-btn">
+              <img src="./assets/svg/cover-edit.svg" alt="">
+            </button>
           </div>
           <!-- banner end -->
-          <div class="welcome-text">
-            <h3>Welcome to <span>Sam Lee’s</span> Streamspace.</h3>
+          <div class="username-text">
+            <h2>Sam Lee’s Streamspace <span>Basic</span></h2>
+          </div>
+          <!-- notification -->
+          <div class="notification-box">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM10 16.875C8.64026 16.875 7.31105 16.4718 6.18046 15.7164C5.04987 14.9609 4.16868 13.8872 3.64833 12.6309C3.12798 11.3747 2.99183 9.99237 3.2571 8.65875C3.52238 7.32513 4.17716 6.10013 5.13864 5.13864C6.10013 4.17716 7.32514 3.52237 8.65876 3.2571C9.99238 2.99183 11.3747 3.12798 12.631 3.64833C13.8872 4.16868 14.9609 5.04987 15.7164 6.18045C16.4718 7.31104 16.875 8.64025 16.875 10C16.8729 11.8227 16.1479 13.5702 14.8591 14.8591C13.5702 16.1479 11.8227 16.8729 10 16.875ZM11.25 13.75C11.25 13.9158 11.1842 14.0747 11.0669 14.1919C10.9497 14.3092 10.7908 14.375 10.625 14.375C10.2935 14.375 9.97554 14.2433 9.74112 14.0089C9.5067 13.7745 9.375 13.4565 9.375 13.125V10C9.20924 10 9.05027 9.93415 8.93306 9.81694C8.81585 9.69973 8.75 9.54076 8.75 9.375C8.75 9.20924 8.81585 9.05027 8.93306 8.93306C9.05027 8.81585 9.20924 8.75 9.375 8.75C9.70652 8.75 10.0245 8.8817 10.2589 9.11612C10.4933 9.35054 10.625 9.66848 10.625 10V13.125C10.7908 13.125 10.9497 13.1908 11.0669 13.3081C11.1842 13.4253 11.25 13.5842 11.25 13.75ZM8.75 6.5625C8.75 6.37708 8.80499 6.19582 8.908 6.04165C9.01101 5.88748 9.15743 5.76732 9.32874 5.69636C9.50004 5.62541 9.68854 5.60684 9.8704 5.64301C10.0523 5.67919 10.2193 5.76848 10.3504 5.89959C10.4815 6.0307 10.5708 6.19775 10.607 6.3796C10.6432 6.56146 10.6246 6.74996 10.5536 6.92127C10.4827 7.09257 10.3625 7.23899 10.2084 7.342C10.0542 7.44502 9.87292 7.5 9.6875 7.5C9.43886 7.5 9.20041 7.40123 9.02459 7.22541C8.84878 7.0496 8.75 6.81114 8.75 6.5625Z"
+                  fill="#68BFBF"
+                />
+              </svg>
+            </div>
+            <div>
+              <p>
+                We noticed a change in login location or account activity.
+                Please review.
+              </p>
+              <a href="#">Update zone</a>
+            </div>
+          </div>
+          <!-- today -->
+          <div class="today-part">
+            <h2>What would you like to do today?</h2>
+            <!-- list -->
+            <div class="d-flex flex-row today-part-list">
+              <!-- 1 -->
+              <div class="today-part-box">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M23.6034 6.84375C23.4838 6.77964 23.3491 6.74919 23.2135 6.75563C23.078 6.76207 22.9467 6.80516 22.8337 6.88031L19.5 9.09844V6.75C19.5 6.35218 19.342 5.97064 19.0607 5.68934C18.7794 5.40804 18.3978 5.25 18 5.25H3C2.60218 5.25 2.22064 5.40804 1.93934 5.68934C1.65804 5.97064 1.5 6.35218 1.5 6.75V17.25C1.5 17.6478 1.65804 18.0294 1.93934 18.3107C2.22064 18.592 2.60218 18.75 3 18.75H18C18.3978 18.75 18.7794 18.592 19.0607 18.3107C19.342 18.0294 19.5 17.6478 19.5 17.25V14.9062L22.8337 17.1291C22.9576 17.2095 23.1024 17.2515 23.25 17.25C23.4489 17.25 23.6397 17.171 23.7803 17.0303C23.921 16.8897 24 16.6989 24 16.5V7.5C23.9991 7.36506 23.9617 7.23287 23.8919 7.11737C23.8221 7.00187 23.7225 6.90734 23.6034 6.84375ZM18 17.25H3V6.75H18V17.25ZM22.5 15.0984L19.5 13.0988V10.9012L22.5 8.90625V15.0984Z"
+                      fill="#1DA4A4"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Record</h3>
+                  <p>Livestream to your audience.</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="today-part-box">
+                <div>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M15.75 9.75C15.75 9.00832 15.5301 8.28329 15.118 7.66661C14.706 7.04992 14.1203 6.56928 13.4351 6.28545C12.7498 6.00162 11.9958 5.92736 11.2684 6.07205C10.541 6.21675 9.8728 6.5739 9.34835 7.09835C8.8239 7.62279 8.46675 8.29098 8.32205 9.01841C8.17736 9.74584 8.25162 10.4998 8.53545 11.1851C8.81928 11.8703 9.29993 12.456 9.91661 12.868C10.5333 13.2801 11.2583 13.5 12 13.5C12.9946 13.5 13.9484 13.1049 14.6517 12.4016C15.3549 11.6984 15.75 10.7446 15.75 9.75ZM9.75 9.75C9.75 9.30499 9.88196 8.86998 10.1292 8.49996C10.3764 8.12995 10.7278 7.84157 11.139 7.67127C11.5501 7.50097 12.0025 7.45641 12.439 7.54323C12.8754 7.63005 13.2763 7.84434 13.591 8.15901C13.9057 8.47368 14.12 8.87459 14.2068 9.31104C14.2936 9.7475 14.249 10.1999 14.0787 10.611C13.9084 11.0222 13.62 11.3736 13.25 11.6208C12.88 11.868 12.445 12 12 12C11.4033 12 10.831 11.7629 10.409 11.341C9.98705 10.919 9.75 10.3467 9.75 9.75ZM21 18.75H12.75V17.2125C14.6645 17.0201 16.4318 16.0992 17.6864 14.6404C18.941 13.1816 19.5869 11.2963 19.4906 9.37462C19.3943 7.45291 18.563 5.64173 17.1688 4.31566C15.7746 2.9896 13.9241 2.25009 12 2.25009C10.0759 2.25009 8.22535 2.9896 6.83115 4.31566C5.43695 5.64173 4.60573 7.45291 4.5094 9.37462C4.41308 11.2963 5.05901 13.1816 6.31362 14.6404C7.56822 16.0992 9.33552 17.0201 11.25 17.2125V18.75H3C2.80109 18.75 2.61032 18.829 2.46967 18.9697C2.32902 19.1103 2.25 19.3011 2.25 19.5C2.25 19.6989 2.32902 19.8897 2.46967 20.0303C2.61032 20.171 2.80109 20.25 3 20.25H21C21.1989 20.25 21.3897 20.171 21.5303 20.0303C21.671 19.8897 21.75 19.6989 21.75 19.5C21.75 19.3011 21.671 19.1103 21.5303 18.9697C21.3897 18.829 21.1989 18.75 21 18.75ZM6 9.75C6 8.56331 6.35189 7.40327 7.01118 6.41658C7.67047 5.42988 8.60754 4.66085 9.7039 4.20672C10.8003 3.75259 12.0067 3.63377 13.1705 3.86529C14.3344 4.0968 15.4035 4.66824 16.2426 5.50736C17.0818 6.34647 17.6532 7.41557 17.8847 8.57946C18.1162 9.74334 17.9974 10.9497 17.5433 12.0461C17.0892 13.1425 16.3201 14.0795 15.3334 14.7388C14.3467 15.3981 13.1867 15.75 12 15.75C10.4092 15.7483 8.88412 15.1156 7.75928 13.9907C6.63444 12.8659 6.00174 11.3408 6 9.75Z" fill="#1DA4A4"/>
+</svg>
+                </div>
+                <div>
+                  <h3>Conference</h3>
+                  <p>Start a meeting with friends</p>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- stream start -->
           <div class="stream-box w-100">
@@ -392,6 +467,10 @@
                   <img src="./assets/svg/donate.svg" alt="" />
                 </button>
                 <button class="share-btn">
+                  <span>Boost</span>
+                  <img src="./assets/svg/boost.svg" alt="" />
+                </button>
+                <button class="share-btn">
                   <span>Share</span>
                   <img src="./assets/svg/ShareNetwork.svg" alt="" />
                 </button>
@@ -406,20 +485,23 @@
                   <span>2</span>
                   <img src="./assets/svg/Chat.svg" alt="" />
                 </button>
+                <button class="clr-bnts">
+                  <img src="./assets/svg/DotsThreeVertical.svg" alt="" />
+                </button>
               </div>
             </div>
           </div>
           <!-- stream end -->
-          <!-- active start -->
+          <!-- active start 1 -->
           <div class="stream-box w-100">
-            <h2>Your Stream</h2>
+            <h2>Recommended</h2>
             <!-- stream list start -->
             <div class="stream-list">
               <!-- 1 -->
               <div>
                 <!-- player-list-img -->
                 <div class="player-list-img w-100">
-                  <img src="./assets/img/video-01.png" alt=""  class="w-100 "/>
+                  <img src="./assets/img/video-01.png" alt="" class="w-100" />
                   <div class="live-boxs"><span class="live">Live</span></div>
                 </div>
                 <!-- player-list-text -->
@@ -435,7 +517,7 @@
               <div>
                 <!-- player-list-img -->
                 <div class="player-list-img w-100">
-                  <img src="./assets/img/video-02.png" alt="" class="w-100 "/>
+                  <img src="./assets/img/video-02.png" alt="" class="w-100" />
                   <div class="live-boxs"><span class="live">Live</span></div>
                 </div>
                 <!-- player-list-text -->
@@ -451,7 +533,7 @@
               <div>
                 <!-- player-list-img -->
                 <div class="player-list-img w-100">
-                  <img src="./assets/img/video-03.png" alt="" class="w-100 "/>
+                  <img src="./assets/img/video-03.png" alt="" class="w-100" />
                   <div class="live-boxs"><span class="live">Live</span></div>
                 </div>
                 <!-- player-list-text -->
@@ -460,6 +542,63 @@
                   <div class="">
                     <h5>Ziza Rhakut</h5>
                     <h6>Sky Watching</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- stream list end -->
+          </div>
+          <!-- active end -->
+          <!-- active start -->
+          <div class="stream-box w-100">
+            <h2>Top Rated</h2>
+            <!-- stream list start -->
+            <div class="stream-list">
+              <!-- 1 -->
+              <div>
+                <!-- player-list-img -->
+                <div class="player-list-img w-100">
+                  <img src="./assets/img/video-04.png" alt="" class="w-100" />
+                  <div class="live-boxs"><span class="live">Live</span></div>
+                </div>
+                <!-- player-list-text -->
+                <div class="player-list-text">
+                  <div><img src="./assets/img/channels.png" alt="" /></div>
+                  <div class="">
+                    <h5>Solomon Wayo</h5>
+                    <h6>Toast</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div>
+                <!-- player-list-img -->
+                <div class="player-list-img w-100">
+                  <img src="./assets/img/video-05.png" alt="" class="w-100" />
+                  <div class="live-boxs"><span class="live">Live</span></div>
+                </div>
+                <!-- player-list-text -->
+                <div class="player-list-text">
+                  <div><img src="./assets/img/channels.png" alt="" /></div>
+                  <div class="">
+                    <h5>Raheema Jones</h5>
+                    <h6>Nature</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div>
+                <!-- player-list-img -->
+                <div class="player-list-img w-100">
+                  <img src="./assets/img/video-06.png" alt="" class="w-100" />
+                  <div class="live-boxs"><span class="live">Live</span></div>
+                </div>
+                <!-- player-list-text -->
+                <div class="player-list-text">
+                  <div><img src="./assets/img/channels.png" alt="" /></div>
+                  <div class="">
+                    <h5>Janet Hunter</h5>
+                    <h6>Bird Calls</h6>
                   </div>
                 </div>
               </div>
@@ -478,6 +617,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
